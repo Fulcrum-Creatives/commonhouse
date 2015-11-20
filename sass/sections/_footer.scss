@@ -1,0 +1,64 @@
+/*---------------------------------------------------------
+ * Footer
+---------------------------------------------------------*/
+.footer {
+  background-color: $dark_red;
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    transition: text-shadow 0.5s ease-in-out;
+    &:hover {
+      transition: text-shadow 0.5s ease-in-out;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+    }
+  }
+  .tidesans__600 {
+    @include font-size(24);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 1.5em;
+  }
+  .copyright {
+    color: $light_green2;
+    text-align: center;
+    text-transform: uppercase;
+    @include font-size(20);
+  }
+}
+.footer__contact {
+  background-color: $light_brown;
+  overflow: hidden;
+}
+.contact__link {
+  position: relative;
+  float: right;
+  background-color: $light_green3;
+  width: 240px;
+  height: 50px;
+  color: #842b1c;
+  text-align: center;
+  a {
+    display: block;
+    text-decoration: none;
+    color: #842b1c;
+    padding: 13px;
+    text-shadow: none;
+    transition: text-shadow 0.5s ease-in-out;
+    &:hover {
+      transition: text-shadow 0.5s ease-in-out;
+      text-shadow: 3px 3px 0 rgba(123,43,28,0.3);
+    }
+  }
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 70px;
+    border-color: transparent transparent $light_green3 transparent;
+    position: absolute;
+    top: 0px;
+    left: -70px;
+  }
+}

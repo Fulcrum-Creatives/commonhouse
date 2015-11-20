@@ -1,0 +1,50 @@
+/*---------------------------------------------------------
+ * Base
+---------------------------------------------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  @include font-size($font-size__base);
+  background-color: $dark_red;
+  font-family: "tide_sans400_lil_dude", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: $color__font;
+}
+#av-overlay-wrap {
+  background: rgba(114, 76, 33, 0.7) !important;
+}
+#av-overlay {
+  background: $light_green2 !important;
+  font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0 2em !important;
+  h1 {
+    @include font-size(20);
+  }
+  p {
+    margin-bottom: 1em !important;
+  }
+}
+#av_verify_form {
+  input {
+    color: #842b1c;
+    background-color: $light_brown;
+    outline: 0;
+    border: none;
+    font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-shadow: none;
+    transition: text-shadow 0.5s ease-in-out;
+    &:hover {
+      transition: text-shadow 0.5s ease-in-out;
+      text-shadow: 3px 3px 0 rgba(123,43,28,0.3);
+    }
+  }
+}

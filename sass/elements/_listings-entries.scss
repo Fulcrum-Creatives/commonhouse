@@ -1,0 +1,96 @@
+/*---------------------------------------------------------
+ * Listings Entries
+---------------------------------------------------------*/
+.ales-page {
+  background-color: #fff;
+}
+.entry.listing,
+.entry.single {
+  overflow: hidden;
+  padding: 2.5em 0;
+  .entry__thumbnail {
+    padding: 0 0 2.5em 0;
+    @include media-query(800px) {
+      padding: 0 1em 0 0;
+    }
+    img {
+      width: 238px;
+      height: 219px;
+      margin: 0 auto;
+      border-radius: 100%;
+      box-shadow: none;
+      transition: box-shadow 0.5s ease-in-out;
+      &:hover {
+        transition: box-shadow 0.5s ease-in-out;
+        box-shadow: 8px 8px 0 0 rgba(0,0,0,0.1);
+      }
+    }
+    &.col__1-3 {
+      float: none;
+      width: 100%;
+      @include media-query(800px) {
+        width: 33.33%;
+        float: left;
+      }
+    }
+    &.rect {
+      padding-right: 1em;
+      img {
+        width: 376px;
+        height: 158px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .entry__content {
+    float: left;
+    &.col__2-3 {
+      float: none;
+      width: 100%;
+      @include media-query(800px) {
+        width: 66.66%;
+        float: left;
+      }
+    }
+  }
+  .entry__heading {
+    @include font-size(35);
+    margin: 0 0 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $light_green2;
+    @include media-query(800px) {
+      text-align: left;
+    }
+    a {
+      color: $light_green2;
+      text-decoration: none;
+      text-shadow: none;
+      transition: text-shadow 0.5s ease-in-out;
+      &:hover {
+        transition: text-shadow 0.5s ease-in-out;
+        text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+      }
+    }
+
+  }
+  .entry_subtitle {
+    color: $light_green2;
+    @include font-size(28);
+    margin: 0 0 0.25em;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    @include media-query(800px) {
+      text-align: left;
+    }
+  }
+  p {
+    @include font-size(18);
+  }
+  .entry__ellipsis {
+    color: $light_green2;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+}

@@ -1,0 +1,36 @@
+// Colors
+//================================================================================
+// text colors
+$color__font: #573917;
+$color__header: #333;
+
+// color pallete
+$green: #78923b;
+$light_green: #8fb23e;
+$light_green2: #fec931;
+$light_green3: #fcbd41;
+$brown: #724c21;
+$light_brown: #c79967;
+$red: #734c22;
+$dark_red: #963923;
+
+$header_green: #5b7132;
+$header_light_green: #7eb43d;
+$header_red: #c35119;
+
+// Typography
+//================================================================================
+$font-size__base: 16;
+// The default font family.
+$font-family__base: sans-serif !default;
+// Header sizes
+$h1-font-size: 2    * $font-size__base !default;
+$h2-font-size: 1.5  * $font-size__base !default;
+$h3-font-size: 1.17 * $font-size__base !default;
+$h4-font-size: 1    * $font-size__base !default;
+$h5-font-size: 0.83 * $font-size__base !default;
+$h6-font-size: 0.67 * $font-size__base !default;
+
+// Layout
+//================================================================================
+$gutter: 1em;

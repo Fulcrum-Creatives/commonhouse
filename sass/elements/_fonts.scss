@@ -1,0 +1,135 @@
+/*---------------------------------------------------------
+ * Fonts
+---------------------------------------------------------*/
+@font-face {
+    font-family: 'lulo_cleanone';
+    src: url('fonts/lulocleanone/lulocleanone.eot');
+    src: url('fonts/lulocleanone/lulocleanone.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lulocleanone/lulocleanone.woff2') format('woff2'),
+         url('fonts/lulocleanone/lulocleanone.woff') format('woff'),
+         url('fonts/lulocleanone/lulocleanone.ttf') format('truetype'),
+         url('fonts/lulocleanone/lulocleanone.svg#lulo_cleanone') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.lulocleanone {
+  font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'lulo_cleanone_bold';
+    src: url('fonts/lulocleanone/lulocleanonebold.eot');
+    src: url('fonts/lulocleanone/lulocleanonebold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lulocleanone/lulocleanonebold.woff2') format('woff2'),
+         url('fonts/lulocleanone/lulocleanonebold.woff') format('woff'),
+         url('fonts/lulocleanone/lulocleanonebold.ttf') format('truetype'),
+         url('fonts/lulocleanone/lulocleanonebold.svg#lulo_cleanone_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.lulocleanone__bold {
+  font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* @font-face {
+    font-family: 'tide_sans300_lil_kahuna';
+    src: url('fonts/tidesans/tidesans-300lilkahuna.eot');
+    src: url('fonts/tidesans/tidesans-300lilkahuna.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tidesans/tidesans-300lilkahuna.woff2') format('woff2'),
+         url('fonts/tidesans/tidesans-300lilkahuna.woff') format('woff'),
+         url('fonts/tidesans/tidesans-300lilkahuna.ttf') format('truetype'),
+         url('fonts/tidesans/tidesans-300lilkahuna.svg#tide_sans300_lil_kahuna') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+@font-face {
+    font-family: 'tide_sans400_lil_dude';
+    src: url('fonts/tidesans/tidesans-400lildude.eot');
+    src: url('fonts/tidesans/tidesans-400lildude.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tidesans/tidesans-400lildude.woff2') format('woff2'),
+         url('fonts/tidesans/tidesans-400lildude.woff') format('woff'),
+         url('fonts/tidesans/tidesans-400lildude.ttf') format('truetype'),
+         url('fonts/tidesans/tidesans-400lildude.svg#tide_sans400_lil_dude') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.tidesans__400 {
+  font-family: 'tide_sans400_lil_dude', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'tide_sans400_lil_dude_italic';
+    src: url('fonts/tidesans/tidesans-400lildudeitalic.eot');
+    src: url('fonts/tidesans/tidesans-400lildudeitalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tidesans/tidesans-400lildudeitalic.woff2') format('woff2'),
+         url('fonts/tidesans/tidesans-400lildudeitalic.woff') format('woff'),
+         url('fonts/tidesans/tidesans-400lildudeitalic.ttf') format('truetype'),
+         url('fonts/tidesans/tidesans-400lildudeitalic.svg#tide_sans400_lil_dude_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.tidesans__400-itialic {
+  font-family: 'tide_sans400_lil_dude_italic', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'tide_sans500_dudette';
+    src: url('fonts/tidesans/tidesans-500dudette.eot');
+    src: url('fonts/tidesans/tidesans-500dudette.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tidesans/tidesans-500dudette.woff2') format('woff2'),
+         url('fonts/tidesans/tidesans-500dudette.woff') format('woff'),
+         url('fonts/tidesans/tidesans-500dudette.ttf') format('truetype'),
+         url('fonts/tidesans/tidesans-500dudette.svg#tide_sans500_dudette') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.tidesans__500 {
+  font-family: 'tide_sans500_dudette', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'tide_sans600_bunny';
+    src: url('fonts/tidesans/tidesans-600bunny.eot');
+    src: url('fonts/tidesans/tidesans-600bunny.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tidesans/tidesans-600bunny.woff2') format('woff2'),
+         url('fonts/tidesans/tidesans-600bunny.woff') format('woff'),
+         url('fonts/tidesans/tidesans-600bunny.ttf') format('truetype'),
+         url('fonts/tidesans/tidesans-600bunny.svg#tide_sans600_bunny') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.tidesans__600 {
+  font-family: 'tide_sans600_bunny', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'tide_sans600_bunny_italic';
+    src: url('fonts/tidesans/tidesans-600bunnyitalic.eot');
+    src: url('fonts/tidesans/tidesans-600bunnyitalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tidesans/tidesans-600bunnyitalic.woff2') format('woff2'),
+         url('fonts/tidesans/tidesans-600bunnyitalic.woff') format('woff'),
+         url('fonts/tidesans/tidesans-600bunnyitalic.ttf') format('truetype'),
+         url('fonts/tidesans/tidesans-600bunnyitalic.svg#tide_sans600_bunny_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.tidesans__600-italic {
+  font-family: 'tide_sans600_bunny_italic', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'tide_sans700_mondo';
+    src: url('fonts/tidesans/tidesans-700mondo.eot');
+    src: url('fonts/tidesans/tidesans-700mondo.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tidesans/tidesans-700mondo.woff2') format('woff2'),
+         url('fonts/tidesans/tidesans-700mondo.woff') format('woff'),
+         url('fonts/tidesans/tidesans-700mondo.ttf') format('truetype'),
+         url('fonts/tidesans/tidesans-700mondo.svg#tide_sans700_mondo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.tidesans__700 {
+  font-family: 'tide_sans700_mondo', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}

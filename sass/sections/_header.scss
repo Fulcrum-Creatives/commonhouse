@@ -1,0 +1,13 @@
+/*---------------------------------------------------------
+ * Header
+---------------------------------------------------------*/
+.header {
+  padding: 2em 0;
+  overflow:hidden;
+  @include media-query(790px) {
+    padding: 2em 0 1em;
+  }
+  .content__wrapper {
+    overflow: visible;
+  }
+}

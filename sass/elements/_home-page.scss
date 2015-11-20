@@ -1,0 +1,70 @@
+/*---------------------------------------------------------
+ * Homepage Sections
+---------------------------------------------------------*/
+.hp_sections {
+  padding: 2em 0;
+}
+.hp_ales,
+.hp_people {
+  padding-bottom: 4em;
+}
+.hp_ales {
+ background-color: $green;  
+}
+.hp_people {
+ background-color: $light_green3;
+}
+.hp_events {
+ background-color: $red;  
+}
+.header__full {
+  display: none;
+  @include media-query(790px) {
+    display: block;
+  }
+}
+.header__mobile {
+  display: block;
+  @include media-query(790px) {
+    display: none;
+  }
+}
+.hp_sections__header {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2em;
+  @include font-size(20);
+  @include media-query(768px) {
+    @include font-size(29);
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+    text-shadow: none;
+    transition: text-shadow 0.5s ease-in-out;
+    &:hover {
+      transition: text-shadow 0.5s ease-in-out;
+      text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+    }
+  }
+}
+.hp_sections.events {
+  a {
+    color: $light_green2;
+    .border-bottom {
+      border-bottom: 5px solid $light_green3;
+    }
+  }
+}
+.hp-section__full {
+  display: none;
+  @include media-query(769px) {
+    display: block;
+  }
+}
+.hp-section__mobile {
+  display: block;
+  @include media-query(769px) {
+    display: none;
+  }
+}
