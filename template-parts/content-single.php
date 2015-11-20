@@ -31,8 +31,8 @@ endif;
 	        	<?php endif; ?>
 
         <?php elseif( is_singular( 'ales' ) ) : ?>
-        	<?php if( $ch_ale_image != '' ) : ?> 
-		          <img src="<?php echo $ch_ale_image['url']; ?>" alt="<?php echo $ch_ale_image['alt'] ?>" />
+        	<?php if ( has_post_thumbnail() ) : ?>
+		          <?php the_post_thumbnail();?>
 		      <?php endif; ?>
 	      <?php endif; ?>
       </div>

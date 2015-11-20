@@ -1,8 +1,8 @@
 <?php
 if ( have_posts() ) : while ( have_posts() ) : the_post();
-  $ch_ales_section_header_full = dfw_get_field( 'ch_ales_section_header_full' );
+  $ch_ales_section_header_full   = dfw_get_field( 'ch_ales_section_header_full' );
   $ch_ales_section_header_mobile = dfw_get_field( 'ch_ales_section_header_mobile' );
-  $ch_ales_section_page_link = dfw_get_field( 'ch_ales_section_page_link' );
+  $ch_ales_section_page_link     = dfw_get_field( 'ch_ales_section_page_link' );
 endwhile; endif; wp_reset_postdata();
 ?>
 <section class="hp_sections hp_ales bg_dots">
@@ -32,12 +32,15 @@ endwhile; endif; wp_reset_postdata();
         if( have_posts() ) : 
           while( $ale_lrg_query->have_posts() ) : 
             $ale_lrg_query->the_post();
+            $ch_ale_image       = dfw_get_field( 'ch_ale_image' );
+            $ch_ale_image_hover = dfw_get_field( 'ch_ale_image_hover' );
             ?>
             <div class="col__1-3">
-              <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail">
+              <?php if( $ch_ale_image != '' ) : ?>
+                <div class="entry__thumbnail entry__thumbnail--hover">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
-                    <?php the_post_thumbnail();?>
+                    <img src="<?php echo $ch_ale_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_ale_image_hover['alt']; ?>" />
+                    <img src="<?php echo $ch_ale_image['url']; ?>" class="hover__top" alt="<?php echo $ch_ale_image['alt']; ?>" />
                   </a>
                 </div>
               <?php endif ?>
@@ -64,12 +67,15 @@ endwhile; endif; wp_reset_postdata();
         if( have_posts() ) : 
           while( $ale_sm_query->have_posts() ) : 
             $ale_sm_query->the_post();
+            $ch_ale_image       = dfw_get_field( 'ch_ale_image' );
+            $ch_ale_image_hover = dfw_get_field( 'ch_ale_image_hover' );
             ?>
             <div class="col__1-4">
-              <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail">
+              <?php if( $ch_ale_image != '' ) : ?>
+                <div class="entry__thumbnail entry__thumbnail--hover">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
-                    <?php the_post_thumbnail();?>
+                    <img src="<?php echo $ch_ale_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_ale_image_hover['alt']; ?>" />
+                    <img src="<?php echo $ch_ale_image['url']; ?>" class="hover__top" alt="<?php echo $ch_ale_image['alt']; ?>" />
                   </a>
                 </div>
               <?php endif ?>
@@ -97,12 +103,15 @@ endwhile; endif; wp_reset_postdata();
         if( have_posts() ) : 
           while( $ale_mobile_query->have_posts() ) : 
             $ale_mobile_query->the_post();
+            $ch_ale_image       = dfw_get_field( 'ch_ale_image' );
+            $ch_ale_image_hover = dfw_get_field( 'ch_ale_image_hover' );
             ?>
             <div class="col__1-3">
-              <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail">
+              <?php if( $ch_ale_image != '' ) : ?>
+                <div class="entry__thumbnail entry__thumbnail--hover">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
-                    <?php the_post_thumbnail();?>
+                    <img src="<?php echo $ch_ale_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_ale_image_hover['alt']; ?>" />
+                    <img src="<?php echo $ch_ale_image['url']; ?>" class="hover__top" alt="<?php echo $ch_ale_image['alt']; ?>" />
                   </a>
                 </div>
               <?php endif ?>
