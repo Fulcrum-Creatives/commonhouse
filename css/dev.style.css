@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.2
+Version: 1.0.3
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -979,6 +979,41 @@ img {
 .entry__rect .entry__thumbnail {
   margin: 0 auto;
 }
+.entry__circle-lrg .entry__thumbnail img,
+.entry__circle-sm .entry__thumbnail img,
+.entry__rect .entry__thumbnail img {
+  border-radius: 100%;
+  -webkit-transition: opacity 0.5s ease-in-out;
+          transition: opacity 0.5s ease-in-out;
+}
+.entry__circle-lrg .entry__thumbnail img:hover,
+.entry__circle-sm .entry__thumbnail img:hover,
+.entry__rect .entry__thumbnail img:hover {
+  -webkit-transition: opacity 0.5s ease-in-out;
+          transition: opacity 0.5s ease-in-out;
+}
+.entry__circle-lrg .entry__thumbnail img:hover.hover__top,
+.entry__circle-sm .entry__thumbnail img:hover.hover__top,
+.entry__rect .entry__thumbnail img:hover.hover__top {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.entry__circle-lrg .entry__thumbnail a,
+.entry__circle-sm .entry__thumbnail a,
+.entry__rect .entry__thumbnail a {
+  display: block;
+  border-radius: 100%;
+  box-shadow: none;
+  -webkit-transition: box-shadow 0.5s ease-in-out;
+          transition: box-shadow 0.5s ease-in-out;
+}
+.entry__circle-lrg .entry__thumbnail a:hover,
+.entry__circle-sm .entry__thumbnail a:hover,
+.entry__rect .entry__thumbnail a:hover {
+  -webkit-transition: box-shadow 0.5s ease-in-out;
+          transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.1);
+}
 .entry__circle-lrg .entry__thumbnail--hover,
 .entry__circle-sm .entry__thumbnail--hover,
 .entry__rect .entry__thumbnail--hover {
@@ -989,41 +1024,6 @@ img {
 .entry__rect .entry__thumbnail--hover img {
   position: absolute;
   left: 0;
-}
-.entry__circle-lrg img,
-.entry__circle-sm img,
-.entry__rect img {
-  border-radius: 100%;
-  -webkit-transition: opacity 0.5s ease-in-out;
-          transition: opacity 0.5s ease-in-out;
-}
-.entry__circle-lrg img:hover,
-.entry__circle-sm img:hover,
-.entry__rect img:hover {
-  -webkit-transition: opacity 0.5s ease-in-out;
-          transition: opacity 0.5s ease-in-out;
-}
-.entry__circle-lrg img:hover.hover__top,
-.entry__circle-sm img:hover.hover__top,
-.entry__rect img:hover.hover__top {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-}
-.entry__circle-lrg a,
-.entry__circle-sm a,
-.entry__rect a {
-  display: block;
-  border-radius: 100%;
-  box-shadow: none;
-  -webkit-transition: box-shadow 0.5s ease-in-out;
-          transition: box-shadow 0.5s ease-in-out;
-}
-.entry__circle-lrg a:hover,
-.entry__circle-sm a:hover,
-.entry__rect a:hover {
-  -webkit-transition: box-shadow 0.5s ease-in-out;
-          transition: box-shadow 0.5s ease-in-out;
-  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .entry__circle-lrg .entry__header,
