@@ -22,7 +22,7 @@ endwhile; endif; wp_reset_postdata();
       </h2>
     </header>
     <div class="hp-section__full ales__full">
-      <div class="row entry__circle-lrg">
+      <div class="row entry__fp">
         <?php
         $ale_lrg_query = new WP_Query( array(
             'post_type'      => 'ales',
@@ -37,14 +37,14 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-3">
               <?php if( $ch_ale_image != '' ) : ?>
-                <div class="entry__thumbnail entry__thumbnail--hover">
-                  <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                <div class="entry__thumbnail entry__circle-lrg">
+                  <a href="<?php esc_url( the_permalink() ); ?>" class="entry__thumbnail--hover" rel="bookmark">
                     <img src="<?php echo $ch_ale_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_ale_image_hover['alt']; ?>" />
                     <img src="<?php echo $ch_ale_image['url']; ?>" class="hover__top" alt="<?php echo $ch_ale_image['alt']; ?>" />
                   </a>
                 </div>
               <?php endif ?>
-              <h3 class="entry__header lulocleanone__bold">
+              <h3 class="entry__header entry__header--small lulocleanone__bold">
                 <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
                   <?php the_title(); ?>
                 </a>
@@ -56,7 +56,7 @@ endwhile; endif; wp_reset_postdata();
         wp_reset_postdata();
         ?>
       </div>
-      <div class="row entry__circle-sm">
+      <div class="row entry__fp entry__small">
         <?php
         $ale_sm_query = new WP_Query( array(
             'post_type'      => 'ales',
@@ -72,8 +72,8 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-4">
               <?php if( $ch_ale_image != '' ) : ?>
-                <div class="entry__thumbnail entry__thumbnail--hover">
-                  <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                <div class="entry__thumbnail entry__header--small entry__circle-sm">
+                  <a href="<?php esc_url( the_permalink() ); ?>" class="entry__thumbnail--hover" rel="bookmark">
                     <img src="<?php echo $ch_ale_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_ale_image_hover['alt']; ?>" />
                     <img src="<?php echo $ch_ale_image['url']; ?>" class="hover__top" alt="<?php echo $ch_ale_image['alt']; ?>" />
                   </a>
@@ -93,7 +93,7 @@ endwhile; endif; wp_reset_postdata();
       </div>
     </div>
     <div class="hp-section__mobile ales__mobile">
-      <div class="row  entry__circle-lrg slick-slider">
+      <div class="row entry__fp slick-slider">
         <?php
         $ale_mobile_query = new WP_Query( array(
             'post_type'      => 'ales',
@@ -108,8 +108,8 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-3">
               <?php if( $ch_ale_image != '' ) : ?>
-                <div class="entry__thumbnail entry__thumbnail--hover">
-                  <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                <div class="entry__thumbnail entry__header--small entry__circle-lrg">
+                  <a href="<?php esc_url( the_permalink() ); ?>" class="entry__thumbnail--hover" rel="bookmark">
                     <img src="<?php echo $ch_ale_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_ale_image_hover['alt']; ?>" />
                     <img src="<?php echo $ch_ale_image['url']; ?>" class="hover__top" alt="<?php echo $ch_ale_image['alt']; ?>" />
                   </a>

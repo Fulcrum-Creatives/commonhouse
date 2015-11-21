@@ -22,7 +22,7 @@ endwhile; endif; wp_reset_postdata();
       </h2>
     </header>
     <div class="hp-section__full events__full">
-      <div class="row entry__rect">
+      <div class="row entry__fp">
         <?php
         $today = current_time('Ymd');
         $query_full_small = new WP_Query( array(
@@ -58,7 +58,7 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-2">
               <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail">
+                <div class="entry__thumbnail entry__rect">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
                     <?php the_post_thumbnail();?>
                   </a>
@@ -99,7 +99,7 @@ endwhile; endif; wp_reset_postdata();
       </div>
     </div>
     <div class="hp-section__mobile events__mobile">
-      <div class="row entry__rect">
+      <div class="row entry__fp">
         <?php
         $query_full_small = new WP_Query( array(
             'post_type'         => 'events',
@@ -112,7 +112,7 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__full">
               <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail">
+                <div class="entry__thumbnail entry__rect">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
                     <?php the_post_thumbnail();?>
                   </a>

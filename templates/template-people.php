@@ -17,13 +17,15 @@ get_header();
       $ch_people_nickname = dfw_get_field( 'ch_people_nickname' );
       ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class('entry listing people-page'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
-        <?php if ( has_post_thumbnail() ) : ?>
-          <div class="entry__thumbnail col__1-3">
-            <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
-              <?php the_post_thumbnail();?>
-            </a>
-          </div>
-        <?php endif ?>
+        <div class="col__1-3">
+          <?php if ( has_post_thumbnail() ) : ?>
+            <div class="entry__thumbnail entry__circle-lrg">
+              <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                <?php the_post_thumbnail();?>
+              </a>
+            </div>
+          <?php endif ?>
+        </div>
         <div class="entry__content col__2-3">
           <?php dfw_entry_title( array( 'heading_tag' => 'h2', 'heading_class' => 'entry__heading tidesans__600' ) ); ?>
           <?php if ( $ch_people_nickname ) : ?>

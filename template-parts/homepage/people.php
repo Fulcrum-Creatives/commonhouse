@@ -22,7 +22,7 @@ endwhile; endif; wp_reset_postdata();
       </h2>
     </header>
     <div class="hp-section__full people__full">
-      <div class="row entry__circle-sm">
+      <div class="row entry__fp ">
         <?php
         $people_query = new WP_Query( array(
             'post_type'         => 'people',
@@ -34,12 +34,12 @@ endwhile; endif; wp_reset_postdata();
             $people_query->the_post();
             ?>
             <div class="col__1-4">
-            <?php if ( has_post_thumbnail() ) : ?>
-              <div class="entry__thumbnail">
-                <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
-                  <?php the_post_thumbnail();?>
-                </a>
-              </div>
+              <?php if ( has_post_thumbnail() ) : ?>
+                <div class="entry__thumbnail entry__circle-sm">
+                  <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                    <?php the_post_thumbnail();?>
+                  </a>
+                </div>
               <?php endif ?>
               <h3 class="entry__header lulocleanone">
                 <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
@@ -55,7 +55,7 @@ endwhile; endif; wp_reset_postdata();
       </div>
     </div>
     <div class="hp-section__mobile people__mobile">
-      <div class="row slick-slider entry__circle-sm">
+      <div class="row slick-slider entry__fp">
         <?php
         $people_mobile_query = new WP_Query( array(
             'post_type'         => 'people',
@@ -68,7 +68,7 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-4">
               <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail">
+                <div class="entry__thumbnail entry__circle-sm">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
                     <?php the_post_thumbnail();?>
                   </a>

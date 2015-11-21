@@ -45,9 +45,9 @@ get_header();
       ?>
       <div class="row">
         <article id="post-<?php the_ID(); ?>" <?php post_class('entry listing events-page'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
-          <div class="entry__thumbnail col__1-2">
+          <div class="col__1-2">
             <?php if ( has_post_thumbnail() ) : ?>
-              <div class="entry__thumbnail rect">
+              <div class="entry__thumbnail entry__rect rect">
                 <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
                   <?php the_post_thumbnail();?>
                 </a>
