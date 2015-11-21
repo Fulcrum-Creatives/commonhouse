@@ -41,10 +41,10 @@
     color: #000;
     text-decoration: none;
     text-shadow: none;
-    transition: text-shadow 0.5s ease-in-out;
+    transition: $text_shadow_trans;
     &:hover {
-      transition: text-shadow 0.5s ease-in-out;
-      text-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+      transition: $text_shadow_trans;
+      text-shadow: $text_shadow;
     }
   }
 }

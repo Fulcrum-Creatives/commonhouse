@@ -9,7 +9,7 @@ endwhile; endif; wp_reset_postdata();
   <div class="content__wrapper">
     <header class="hp_sections__header header__full">
       <h2 class="lulocleanone__bold">
-        <a href="<?php echo $ch_ales_section_page_link; ?>">
+        <a href="<?php echo $ch_ales_section_page_link; ?>" class="link__hover--shadow">
           <?php echo $ch_ales_section_header_full; ?>
         </a>
       </h2>
@@ -37,7 +37,7 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-3">
               <?php if( $ch_ale_image != '' ) : ?>
-                <div class="entry__thumbnail entry__circle-lrg">
+                <div class="entry__thumbnail entry__circle-lrg box__hover--shadow">
                   <a href="<?php esc_url( the_permalink() ); ?>" class="entry__thumbnail--hover" rel="bookmark">
                     <img src="<?php echo $ch_ale_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_ale_image_hover['alt']; ?>" />
                     <img src="<?php echo $ch_ale_image['url']; ?>" class="hover__top" alt="<?php echo $ch_ale_image['alt']; ?>" />
@@ -45,7 +45,7 @@ endwhile; endif; wp_reset_postdata();
                 </div>
               <?php endif ?>
               <h3 class="entry__header entry__header--small lulocleanone__bold">
-                <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                <a href="<?php esc_url( the_permalink() ); ?>" class="link__hover--shadow" rel="bookmark">
                   <?php the_title(); ?>
                 </a>
               </h3>
@@ -72,7 +72,7 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-4">
               <?php if( $ch_ale_image != '' ) : ?>
-                <div class="entry__thumbnail entry__header--small entry__circle-sm">
+                <div class="entry__thumbnail entry__header--small entry__circle-sm box__hover--shadow">
                   <a href="<?php esc_url( the_permalink() ); ?>" class="entry__thumbnail--hover" rel="bookmark">
                     <img src="<?php echo $ch_ale_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_ale_image_hover['alt']; ?>" />
                     <img src="<?php echo $ch_ale_image['url']; ?>" class="hover__top" alt="<?php echo $ch_ale_image['alt']; ?>" />
@@ -80,7 +80,7 @@ endwhile; endif; wp_reset_postdata();
                 </div>
               <?php endif ?>
               <h3 class="entry__header lulocleanone__bold">
-                <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                <a href="<?php esc_url( the_permalink() ); ?>" class="link__hover--shadow" rel="bookmark">
                   <?php the_title(); ?>
                 </a>
               </h3>
@@ -108,7 +108,7 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-3">
               <?php if( $ch_ale_image != '' ) : ?>
-                <div class="entry__thumbnail entry__header--small entry__circle-lrg">
+                <div class="entry__thumbnail entry__header--small entry__circle-lrg box__hover--shadow">
                   <a href="<?php esc_url( the_permalink() ); ?>" class="entry__thumbnail--hover" rel="bookmark">
                     <img src="<?php echo $ch_ale_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_ale_image_hover['alt']; ?>" />
                     <img src="<?php echo $ch_ale_image['url']; ?>" class="hover__top" alt="<?php echo $ch_ale_image['alt']; ?>" />
@@ -116,7 +116,7 @@ endwhile; endif; wp_reset_postdata();
                 </div>
               <?php endif ?>
               <h3 class="entry__header lulocleanone__bold">
-                <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                <a href="<?php esc_url( the_permalink() ); ?>" class="link__hover--shadow" rel="bookmark">
                   <?php the_title(); ?>
                 </a>
               </h3>

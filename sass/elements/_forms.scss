@@ -49,11 +49,6 @@
     outline: 0;
     border: none;
     font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
-    text-shadow: none;
-    transition: text-shadow 0.5s ease-in-out;
-    &:hover {
-      transition: text-shadow 0.5s ease-in-out;
-      text-shadow: 3px 3px 0 rgba(123,43,28,0.3);
-    }
+    @extend .link__hover--shadow;
   }
 }

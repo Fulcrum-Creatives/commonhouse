@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.6
+Version: 1.0.7
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -715,14 +715,6 @@ img {
   text-decoration: none;
   color: #fff;
   padding: 1em;
-  text-shadow: none;
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-}
-.sm a:hover {
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 835px) {
   .sm a {
@@ -881,7 +873,7 @@ img {
 .hp_sections__header a:hover {
   -webkit-transition: text-shadow 0.5s ease-in-out;
           transition: text-shadow 0.5s ease-in-out;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
 .hp_sections.events a {
@@ -932,16 +924,6 @@ img {
   font-size: 1.25em;
   text-decoration: none;
   display: block;
-  text-shadow: none;
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-}
-.entry__fp .entry__header a:hover,
-.entry__fp .event__date a:hover,
-.entry__fp .event__location a:hover {
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 .entry__fp .entry__header--small {
   margin: 0 auto;
@@ -1077,14 +1059,6 @@ img {
 }
 .entry__thumbnail a {
   display: block;
-  box-shadow: none;
-  -webkit-transition: box-shadow 0.5s ease-in-out;
-          transition: box-shadow 0.5s ease-in-out;
-}
-.entry__thumbnail a:hover {
-  -webkit-transition: box-shadow 0.5s ease-in-out;
-          transition: box-shadow 0.5s ease-in-out;
-  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .entry__thumbnail--hover {
@@ -1093,16 +1067,6 @@ img {
 .entry__thumbnail--hover img {
   position: absolute;
   left: 0;
-  -webkit-transition: opacity 0.5s ease-in-out;
-          transition: opacity 0.5s ease-in-out;
-}
-.entry__thumbnail--hover img:hover {
-  -webkit-transition: opacity 0.5s ease-in-out;
-          transition: opacity 0.5s ease-in-out;
-}
-.entry__thumbnail--hover img:hover.hover__top {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 
 .entry__circle-lrg a,
@@ -1174,7 +1138,9 @@ img {
   padding: 0 4em 0 0;
 }
 .entry.listing .entry__thumbnail.rect img,
-.entry.single .entry__thumbnail.rect img {
+.entry.listing .entry__thumbnail.rect a,
+.entry.single .entry__thumbnail.rect img,
+.entry.single .entry__thumbnail.rect a {
   border-radius: 20px;
 }
 .entry.listing .entry__content,
@@ -1212,15 +1178,6 @@ img {
 .entry.single .entry__heading a {
   color: #fec931;
   text-decoration: none;
-  text-shadow: none;
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-}
-.entry.listing .entry__heading a:hover,
-.entry.single .entry__heading a:hover {
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 .entry.listing .entry_subtitle,
 .entry.single .entry_subtitle {
@@ -1309,14 +1266,82 @@ img {
   outline: 0;
   border: none;
   font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*---------------------------------------------------------
+ * Pagination
+---------------------------------------------------------*/
+.pagi__button, .dfw_pagi_type__default, .nav__prev,
+.nav__next, .dfw_pagi_type__numbered li {
+  background-color: #c79967;
+  font-size: 20px;
+  font-size: 1.25em;
+  font-family: 'tide_sans400_lil_dude', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.pagi__button a, .dfw_pagi_type__default a, .nav__prev a,
+.nav__next a, .dfw_pagi_type__numbered li a {
+  color: #573917;
+  text-decoration: none;
+  padding: 0.5em 1em;
   text-shadow: none;
   -webkit-transition: text-shadow 0.5s ease-in-out;
           transition: text-shadow 0.5s ease-in-out;
 }
-.contact-form .gform_button:hover {
+.pagi__button a:hover, .dfw_pagi_type__default a:hover, .nav__prev a:hover,
+.nav__next a:hover, .dfw_pagi_type__numbered li a:hover {
   -webkit-transition: text-shadow 0.5s ease-in-out;
           transition: text-shadow 0.5s ease-in-out;
-  text-shadow: 3px 3px 0 rgba(123, 43, 28, 0.3);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.dfw_pagi_type__default {
+  display: inline-block;
+}
+.dfw_pagi_type__default a {
+  display: inline-block;
+}
+
+.dfw_pagi_type__split {
+  overflow: hidden;
+}
+
+.nav__prev a,
+.nav__next a {
+  display: block;
+}
+
+.nav__prev {
+  float: left;
+}
+
+.nav__next {
+  float: right;
+}
+
+.dfw_pagi_type__numbered ul {
+  list-style-type: none;
+  padding: 0;
+}
+.dfw_pagi_type__numbered li {
+  float: left;
+  margin-right: 3px;
+  background-color: transparent;
+  position: relative;
+}
+.dfw_pagi_type__numbered a,
+.dfw_pagi_type__numbered .current {
+  display: block;
+}
+.dfw_pagi_type__numbered a {
+  background-color: #c79967;
+}
+.dfw_pagi_type__numbered .current,
+.dfw_pagi_type__numbered .dots {
+  padding: 0.5em;
+}
+.dfw_pagi_type__numbered .dots {
+  position: relative;
+  top: 5px;
 }
 
 /*---------------------------------------------------------
@@ -1344,14 +1369,6 @@ img {
 .footer a {
   color: #fff;
   text-decoration: none;
-  text-shadow: none;
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-}
-.footer a:hover {
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
 }
 .footer .tidesans__600 {
   font-size: 24px;
@@ -1387,14 +1404,6 @@ img {
   text-decoration: none;
   color: #842b1c;
   padding: 13px;
-  text-shadow: none;
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-}
-.contact__link a:hover {
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-  text-shadow: 3px 3px 0 rgba(123, 43, 28, 0.3);
 }
 .contact__link:before {
   content: "";
@@ -1406,6 +1415,47 @@ img {
   position: absolute;
   top: 0px;
   left: -70px;
+}
+
+/*---------------------------------------------------------
+ * Hover States
+---------------------------------------------------------*/
+.link__hover--shadow, .contact-form .gform_button, .link__hover--shadow-small, .sm a {
+  text-shadow: none;
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+          transition: text-shadow 0.5s ease-in-out;
+}
+.link__hover--shadow:hover, .contact-form .gform_button:hover, .link__hover--shadow-small:hover, .sm a:hover {
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+          transition: text-shadow 0.5s ease-in-out;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.link__hover--shadow-small:hover, .sm a:hover {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.box__hover--shadow a {
+  box-shadow: none;
+  -webkit-transition: box-shadow 0.5s ease-in-out;
+          transition: box-shadow 0.5s ease-in-out;
+}
+.box__hover--shadow a:hover {
+  -webkit-transition: box-shadow 0.5s ease-in-out;
+          transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.1);
+}
+.box__hover--shadow a img {
+  -webkit-transition: opacity 0.5s ease-in-out;
+          transition: opacity 0.5s ease-in-out;
+}
+.box__hover--shadow a img:hover {
+  -webkit-transition: opacity 0.5s ease-in-out;
+          transition: opacity 0.5s ease-in-out;
+}
+.box__hover--shadow a img:hover.hover__top {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 
 /*---------------------------------------------------------

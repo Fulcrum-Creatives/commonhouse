@@ -1,0 +1,36 @@
+/*---------------------------------------------------------
+ * Hover States
+---------------------------------------------------------*/
+.link__hover--shadow {
+  text-shadow: none;
+  transition: $text_shadow_trans;
+  &:hover {
+    transition: $text_shadow_trans;
+    text-shadow: $text_shadow;
+  }
+}
+.link__hover--shadow-small {
+  @extend .link__hover--shadow;
+  &:hover {
+    text-shadow: $text_shadow_sm;
+  }
+}
+.box__hover--shadow {
+  a {
+    box-shadow: none;
+    transition: $box_shadow_trans;
+    &:hover {
+      transition: $box_shadow_trans;
+      box-shadow: $box_shadow;
+    }
+    img {
+      transition: $box_shadow_opacity;
+      &:hover {
+        transition: $box_shadow_opacity;
+        &.hover__top {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+/*---------------------------------------------------------
+ * Pagination
+---------------------------------------------------------*/
+.pagination {
+
+}
+.pagi__button {
+  background-color: $light_brown;
+  @include font-size(20);
+  font-family: 'tide_sans400_lil_dude', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  a {
+    color: $color__font;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    text-shadow: none;
+    transition: $text_shadow_trans;
+    &:hover {
+      transition: $text_shadow_trans;
+      text-shadow: $text_shadow_sm;
+    }
+  }
+}
+.dfw_pagi_type__default {
+  @extend .pagi__button;
+  display: inline-block;
+  a {
+    display: inline-block;
+  }
+}
+.dfw_pagi_type__split {
+  overflow: hidden;
+}
+.nav__prev,
+.nav__next {
+  @extend .pagi__button;
+  a {
+    display: block;
+  }
+}
+.nav__prev {
+  float: left;
+}
+.nav__next {
+  float: right;
+}
+.dfw_pagi_type__numbered {
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    float: left;
+    margin-right: 3px;
+    @extend .pagi__button;
+    background-color: transparent;
+    position: relative;
+  }
+  a,
+  .current {
+    display: block;
+  }
+  a {
+    background-color: $light_brown;
+  }
+  .current,
+  .dots {
+    padding: 0.5em;
+  }
+  .dots {
+    position: relative;
+    top: 5px;
+  }
+}

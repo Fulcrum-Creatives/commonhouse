@@ -6,12 +6,6 @@
   a {
     color: #fff;
     text-decoration: none;
-    text-shadow: none;
-    transition: text-shadow 0.5s ease-in-out;
-    &:hover {
-      transition: text-shadow 0.5s ease-in-out;
-      text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
-    }
   }
   .tidesans__600 {
     @include font-size(24);
@@ -43,12 +37,6 @@
     text-decoration: none;
     color: #842b1c;
     padding: 13px;
-    text-shadow: none;
-    transition: text-shadow 0.5s ease-in-out;
-    &:hover {
-      transition: text-shadow 0.5s ease-in-out;
-      text-shadow: 3px 3px 0 rgba(123,43,28,0.3);
-    }
   }
   &:before {
     content: "";

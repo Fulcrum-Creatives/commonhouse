@@ -9,14 +9,14 @@ endwhile; endif; wp_reset_postdata();
   <div class="content__wrapper">
     <header class="hp_sections__header header__full">
       <h2 class="lulocleanone__bold">
-        <a href="<?php echo $ch_events_section_page_link; ?>">
+        <a href="<?php echo $ch_events_section_page_link; ?>" class="link__hover--shadow">
           <?php echo $ch_events_section_header_full; ?>
         </a>
       </h2>
     </header>
     <header class="hp_sections__header header__mobile">
       <h2 class="lulocleanone__bold">
-        <a href="<?php echo $ch_events_section_page_link; ?>">
+        <a href="<?php echo $ch_events_section_page_link; ?> class="link__hover--shadow"">
           <?php echo $ch_events_section_header_mobile; ?>
         </a>
       </h2>
@@ -58,14 +58,14 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-2">
               <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail entry__rect">
+                <div class="entry__thumbnail entry__rect box__hover--shadow">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
                     <?php the_post_thumbnail();?>
                   </a>
                 </div>
               <?php endif ?>
                 <h3 class="entry__header lulocleanone__bold">
-                  <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                  <a href="<?php esc_url( the_permalink() ); ?>" class="link__hover--shadow" rel="bookmark">
                     <?php the_title(); ?>
                   </a>
                 </h3>
@@ -112,14 +112,14 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__full">
               <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail entry__rect">
+                <div class="entry__thumbnail entry__rect box__hover--shadow">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
                     <?php the_post_thumbnail();?>
                   </a>
                 </div>
               <?php endif ?>
                 <h3 class="entry__header lulocleanone__bold">
-                  <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+                  <a href="<?php esc_url( the_permalink() ); ?>" class="link__hover--shadow" rel="bookmark">
                     <?php the_title(); ?>
                   </a>
                 </h3>

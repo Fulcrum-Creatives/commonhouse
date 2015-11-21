@@ -41,9 +41,9 @@ body {
     border: none;
     font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-shadow: none;
-    transition: text-shadow 0.5s ease-in-out;
+    transition: $text_shadow_trans;
     &:hover {
-      transition: text-shadow 0.5s ease-in-out;
+      transition: $text_shadow_trans;
       text-shadow: 3px 3px 0 rgba(123,43,28,0.3);
     }
   }

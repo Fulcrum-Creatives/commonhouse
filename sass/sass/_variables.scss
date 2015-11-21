@@ -13,11 +13,18 @@ $brown: #724c21;
 $light_brown: #c79967;
 $red: #734c22;
 $dark_red: #963923;
-
+// Header Colors
 $header_green: #5b7132;
 $header_light_green: #7eb43d;
 $header_red: #c35119;
-
+// Text Shadow
+$text_shadow: 3px 3px 0 rgba(0,0,0,0.3);
+$text_shadow_sm: 2px 2px 0 rgba(0,0,0,0.3);
+$text_shadow_trans: text-shadow 0.5s ease-in-out;
+// Box Shadow
+$box_shadow: 8px 8px 0 0 rgba(0,0,0,0.1);
+$box_shadow_trans: box-shadow 0.5s ease-in-out;
+$box_shadow_opacity: opacity 0.5s ease-in-out;
 // Typography
 //================================================================================
 $font-size__base: 16;
