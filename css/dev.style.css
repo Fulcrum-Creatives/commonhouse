@@ -1169,6 +1169,10 @@ img {
     float: left;
   }
 }
+.entry.listing .entry__thumbnail.rect,
+.entry.single .entry__thumbnail.rect {
+  padding: 0 4em 0 0;
+}
 .entry.listing .entry__thumbnail.rect img,
 .entry.single .entry__thumbnail.rect img {
   border-radius: 20px;

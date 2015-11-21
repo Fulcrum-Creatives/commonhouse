@@ -20,15 +20,15 @@ endif;
       		<?php if ( has_post_thumbnail() ) : ?>
 	      		<div class="entry__thumbnail rect">
 	             <?php the_post_thumbnail();?>
+             </div>
         	<?php endif; ?>
-        </div>
-
+       
       	<?php elseif( is_singular( 'people' ) ) : ?>
-	          <?php if ( has_post_thumbnail() ) : ?>
-		      		<div class="entry__thumbnail">
-		             <?php the_post_thumbnail();?>
-		          </div>
-	        	<?php endif; ?>
+          <?php if ( has_post_thumbnail() ) : ?>
+	      		<div class="entry__thumbnail">
+	             <?php the_post_thumbnail();?>
+	          </div>
+        	<?php endif; ?>
 
         <?php elseif( is_singular( 'ales' ) ) : ?>
         	<?php if ( has_post_thumbnail() ) : ?>
