@@ -56,7 +56,7 @@
   }
 }
 .banner-text__sub-tagline {
-  color: $yellow:;
+  color: $yellow;
   @include font-size(20);
   @include media-query(768px) {
     @include font-size(29);
