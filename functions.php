@@ -178,6 +178,22 @@ if( !function_exists( 'fcwp_load_ie' ) ) :
 endif;
 
 /*---------------------------------------------------------
+ * Custom CSS
+---------------------------------------------------------*/
+if( !function_exists( 'fcwp_editor_remove_tabs' ) ) {
+	function fcwp_editor_remove_tabs() {
+		if( is_admin() ) {
+			if( !current_user_can('administrator') ) {
+				add_filter( 'wp_default_editor', create_function( '', 'return "tinymce";' )) ;
+				?>
+<style>.wp-editor-tabs { display: none; }</style>
+				<?php
+			}
+		}
+	}
+	add_action( 'admin_head', 'fcwp_editor_remove_tabs' ); 
+}
+/*---------------------------------------------------------
  * Sidebar Widget Area
 ---------------------------------------------------------*/
 function fcwp_register_custom_sidebars() {
