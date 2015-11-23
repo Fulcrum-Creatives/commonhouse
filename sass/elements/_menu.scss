@@ -58,7 +58,7 @@
     display: block;
     white-space: nowrap;
     text-decoration: none;
-    color: #fff;
+    color: $dark_red;
     padding: 1em;
     @extend .link__hover--shadow-small;
     @include media-query(835px) {
