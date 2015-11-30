@@ -10,6 +10,10 @@ if ( have_posts() ) : while ( have_posts() ) :  the_post();
   $ch_header_image_retina  = dfw_get_field( 'ch_header_image_retina' );
   $page_id                 = get_the_ID();
 endwhile; endif; wp_reset_postdata();
+$header_show = '';
+if( !is_home() || !is_front_page() ) {
+  $header_show = 'header__text-show';
+}
 ?>
 <style>
   .header__banner-image {
@@ -32,19 +36,19 @@ endwhile; endif; wp_reset_postdata();
     <div class="header__banner page-<?php echo $page_id; ?>">
       <div class="header__banner-text">
         <?php if( isset( $ch_tag_line ) ) : ?>
-          <p class="banner-text__tagline tidesans__500">
+          <p class="banner-text__tagline tidesans__500 <?php echo $header_show; ?>">
             <?php echo $ch_tag_line; ?>
           </p>
         <?php endif;  if( isset( $ch_header_text_line_one ) ) : ?>
-          <p class="banner-text__line-one tidesans__700">
+          <p class="banner-text__line-one tidesans__700 <?php echo $header_show; ?>">
             <?php echo $ch_header_text_line_one; ?>
           </p>
         <?php endif;  if( isset( $ch_header_text_line_two ) ) : ?>
-          <p class="banner-text__line-two tidesans__700">
+          <p class="banner-text__line-two tidesans__700 <?php echo $header_show; ?>">
             <?php echo $ch_header_text_line_two; ?>
           </p>
         <?php endif;  if( isset( $ch_sub_tag_line ) ) : ?>
-          <p class="banner-text__sub-tagline tidesans__500">
+          <p class="banner-text__sub-tagline tidesans__500 <?php echo $header_show; ?>">
             <?php echo $ch_sub_tag_line; ?>
           </p>
         <?php endif; ?>

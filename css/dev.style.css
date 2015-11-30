@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.14
+Version: 1.0.15
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -653,7 +653,8 @@ img {
   background-color: #fec931;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.1);
   padding: 1em;
-  margin-bottom: 4.5em;
+  margin-bottom: 14px;
+  z-index: 100;
 }
 @media screen and (min-width: 835px) {
   .primary-nav {
@@ -661,15 +662,8 @@ img {
     box-shadow: none;
     padding-bottom: 0;
     margin-bottom: 0;
-    font-size: 14px;
-    font-size: 0.875em;
     position: absolute;
-    top: 21px;
     padding-top: 0;
-  }
-}
-@media screen and (min-width: 835px) {
-  .primary-nav {
     font-size: 15px;
     font-size: 0.9375em;
     top: 18px;
@@ -732,6 +726,7 @@ img {
   position: relative;
   overflow: hidden;
   top: 4px;
+  padding-top: 3em;
 }
 .header__banner p {
   margin-bottom: 23px;
@@ -739,6 +734,11 @@ img {
 .header__banner.page-10 .header__banner-image {
   opacity: 0.3;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+@media screen and (min-width: 835px) {
+  .header__banner {
+    padding-top: 0;
+  }
 }
 
 .header__banner-image {
@@ -764,13 +764,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header__banner-text {
-    padding: 100px 0;
+    padding: 100px 0 86px;
   }
 }
 
 .banner-text__tagline {
-  font-size: 29px;
-  font-size: 1.8125em;
+  font-size: 28px;
+  font-size: 1.75em;
   letter-spacing: 2px;
 }
 
@@ -788,12 +788,13 @@ img {
   font-size: 60px;
   font-size: 3.75em;
   letter-spacing: 6px;
+  line-height: 1em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 835px) {
   .banner-text__line-one,
   .banner-text__line-two {
-    font-size: 84px;
-    font-size: 5.25em;
+    font-size: 70px;
+    font-size: 4.375em;
   }
 }
 
@@ -807,6 +808,10 @@ img {
     font-size: 29px;
     font-size: 1.8125em;
   }
+}
+
+.header__text-show {
+  display: block;
 }
 
 /*---------------------------------------------------------
