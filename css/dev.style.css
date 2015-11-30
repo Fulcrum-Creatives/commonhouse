@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.12
+Version: 1.0.14
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -598,6 +598,7 @@ img {
 .header__logo {
   padding: 0;
   position: relative;
+  z-index: 100;
 }
 @media screen and (min-width: 835px) {
   .header__logo {
@@ -730,6 +731,7 @@ img {
   color: #fff;
   position: relative;
   overflow: hidden;
+  top: 4px;
 }
 .header__banner p {
   margin-bottom: 23px;
@@ -748,7 +750,6 @@ img {
   height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 250px 417px;
 }
 @media screen and (min-width: 768px) {
   .header__banner-image {

@@ -22,13 +22,13 @@ endwhile; endif; wp_reset_postdata();
   }
 </style>
 <header class="header bg_lines" role="banner" style="background-color:<?php echo $ch_header_color; ?>">
-  <div class="content__wrapper">
+	<div class="content__wrapper">
     <div class="header__logo">
       <div class="banner__left"></div>
       <?php get_template_part( 'template-parts/logo' ); ?>
       <div class="banner__right"></div>
     </div>
-    <?php get_template_part( 'template-parts/menu', 'primary' ); ?>
+		<?php get_template_part( 'template-parts/menu', 'primary' ); ?>
     <div class="header__banner page-<?php echo $page_id; ?>">
       <div class="header__banner-text">
         <?php if( isset( $ch_tag_line ) ) : ?>
