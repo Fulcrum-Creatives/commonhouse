@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.16
+Version: 1.0.17
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -1334,22 +1334,30 @@ img {
 ---------------------------------------------------------*/
 #av-overlay-wrap {
   background: #724C21 !important;
-  background: rgba(114, 76, 33, 0.7) !important;
+  background: rgba(114, 76, 33, 0.9) !important;
 }
 
 #av-overlay {
-  background: #fec931 !important;
+  background-color: #5b7132 !important;
+  background-image: url(images/bg-texture-lines.png) !important;
+  /* background-image: url(images/age-bg.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important; */
+  height: 408px;
   font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #fff;
   text-align: center;
-  padding: 1em 0 2em !important;
+  padding: 7em 0 2em !important;
+  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.1);
 }
 #av-overlay h1 {
   font-size: 20px;
   font-size: 1.25em;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 #av-overlay p {
   margin-bottom: 1em !important;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 #av_verify_form input {

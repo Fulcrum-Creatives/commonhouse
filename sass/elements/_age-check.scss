@@ -2,19 +2,27 @@
  * Age Check
 ---------------------------------------------------------*/
 #av-overlay-wrap {
-  background: rgba(114, 76, 33, 0.7) !important;
+  background: rgba(114, 76, 33, 0.9) !important;
 }
 #av-overlay {
-  background: $light_green2 !important;
+  background-color: #5b7132 !important;
+  background-image: url(images/bg-texture-lines.png) !important;
+  /* background-image: url(images/age-bg.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important; */
+  height: 408px;
   font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #fff;
   text-align: center;
-  padding: 1em 0 2em !important;
+  padding: 7em 0 2em !important;
+  box-shadow: $box_shadow;
   h1 {
     @include font-size(20);
+    text-shadow: $text_shadow_sm;
   }
   p {
     margin-bottom: 1em !important;
+    text-shadow: $text_shadow_sm;
   }
 }
 #av_verify_form {
