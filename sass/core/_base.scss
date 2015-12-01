@@ -17,34 +17,6 @@ body {
   font-family: "tide_sans400_lil_dude", Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: $color__font;
 }
-#av-overlay-wrap {
-  background: rgba(114, 76, 33, 0.7) !important;
-}
-#av-overlay {
-  background: $light_green2 !important;
-  font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0 2em !important;
-  h1 {
-    @include font-size(20);
-  }
-  p {
-    margin-bottom: 1em !important;
-  }
-}
-#av_verify_form {
-  input {
-    color: #842b1c;
-    background-color: $light_brown;
-    outline: 0;
-    border: none;
-    font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
-    text-shadow: none;
-    transition: $text_shadow_trans;
-    &:hover {
-      transition: $text_shadow_trans;
-      text-shadow: 3px 3px 0 rgba(123,43,28,0.3);
-    }
-  }
+.main {
+  position: relative;
 }

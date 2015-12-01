@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.15
+Version: 1.0.16
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -256,40 +256,8 @@ body {
   color: #573917;
 }
 
-#av-overlay-wrap {
-  background: #724C21 !important;
-  background: rgba(114, 76, 33, 0.7) !important;
-}
-
-#av-overlay {
-  background: #fec931 !important;
-  font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0 2em !important;
-}
-#av-overlay h1 {
-  font-size: 20px;
-  font-size: 1.25em;
-}
-#av-overlay p {
-  margin-bottom: 1em !important;
-}
-
-#av_verify_form input {
-  color: #842b1c;
-  background-color: #c79967;
-  outline: 0;
-  border: none;
-  font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
-  text-shadow: none;
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-}
-#av_verify_form input:hover {
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-  text-shadow: 3px 3px 0 rgba(123, 43, 28, 0.3);
+.main {
+  position: relative;
 }
 
 /*---------------------------------------------------------
@@ -306,6 +274,8 @@ body {
 
 .inner {
   padding: 0 1em;
+  position: relative;
+  z-index: 10;
 }
 
 .row {
@@ -575,6 +545,15 @@ img {
 
 .bg_dots {
   background-image: url(images/bg-texture-dots.png);
+}
+
+.ales__bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
 }
 
 /*---------------------------------------------------------
@@ -1348,6 +1327,45 @@ img {
 .dfw_pagi_type__numbered .dots {
   position: relative;
   top: 5px;
+}
+
+/*---------------------------------------------------------
+ * Age Check
+---------------------------------------------------------*/
+#av-overlay-wrap {
+  background: #724C21 !important;
+  background: rgba(114, 76, 33, 0.7) !important;
+}
+
+#av-overlay {
+  background: #fec931 !important;
+  font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0 2em !important;
+}
+#av-overlay h1 {
+  font-size: 20px;
+  font-size: 1.25em;
+}
+#av-overlay p {
+  margin-bottom: 1em !important;
+}
+
+#av_verify_form input {
+  color: #842b1c;
+  background-color: #c79967;
+  outline: 0;
+  border: none;
+  font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-shadow: none;
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+          transition: text-shadow 0.5s ease-in-out;
+}
+#av_verify_form input:hover {
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+          transition: text-shadow 0.5s ease-in-out;
+  text-shadow: 3px 3px 0 rgba(123, 43, 28, 0.3);
 }
 
 /*---------------------------------------------------------
