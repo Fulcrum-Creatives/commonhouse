@@ -11,6 +11,8 @@
 }
 .inner {
   padding: 0 1em;
+  position: relative;
+  z-index: 10;
 }
 .row {
   position: relative;
