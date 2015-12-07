@@ -707,6 +707,10 @@ img {
   top: 4px;
   padding-top: 3em;
 }
+.header__banner a {
+  color: #fff;
+  text-decoration: none;
+}
 .header__banner p {
   margin-bottom: 23px;
 }
@@ -1003,6 +1007,30 @@ img {
 
 .page-template-template-contact main .content__wrapper {
   padding: 5em 0;
+}
+
+.entry__content h2 {
+  font-family: 'tide_sans600_bunny_italic', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 35px;
+  font-size: 2.1875em;
+  margin: 0 0 0.25em;
+  text-transform: uppercase;
+  color: #fec931;
+}
+.entry__content h3 {
+  font-family: 'tide_sans400_lil_dude', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fec931;
+  font-size: 28px;
+  font-size: 1.75em;
+  margin: 0 0 0.25em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.entry__content p a {
+  color: #1a1107;
+}
+.entry__content p a:hover {
+  color: black;
 }
 
 .default .col__1-2 {
@@ -1452,18 +1480,18 @@ img {
 /*---------------------------------------------------------
  * Hover States
 ---------------------------------------------------------*/
-.link__hover--shadow, .contact-form .gform_button, .link__hover--shadow-small, .sm a {
+.link__hover--shadow, .contact-form .gform_button, .link__hover--shadow-small, .sm a, .header__banner a {
   text-shadow: none;
   -webkit-transition: text-shadow 0.5s ease-in-out;
           transition: text-shadow 0.5s ease-in-out;
 }
-.link__hover--shadow:hover, .contact-form .gform_button:hover, .link__hover--shadow-small:hover, .sm a:hover {
+.link__hover--shadow:hover, .contact-form .gform_button:hover, .link__hover--shadow-small:hover, .sm a:hover, .header__banner a:hover {
   -webkit-transition: text-shadow 0.5s ease-in-out;
           transition: text-shadow 0.5s ease-in-out;
   text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
 }
 
-.link__hover--shadow-small:hover, .sm a:hover {
+.link__hover--shadow-small:hover, .sm a:hover, .header__banner a:hover {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 

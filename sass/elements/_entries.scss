@@ -24,6 +24,31 @@
     }
   }
 }
+.entry__content {
+  h2 {
+    font-family: 'tide_sans600_bunny_italic', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    @include font-size(35);
+    margin: 0 0 0.25em;
+    text-transform: uppercase;
+    color: $light_green2;
+  }
+  h3 {
+    font-family: 'tide_sans400_lil_dude', Arial, "Helvetica Neue", Helvetica, sans-serif;
+     color: $light_green2;
+    @include font-size(28);
+    margin: 0 0 0.25em;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  p {
+    a {
+      color: darken( $color__font, 15% );
+      &:hover {
+        color: darken( $color__font, 25% );
+      }
+    }
+  }
+}
 .default {
   .col__1-2 {
     float: none;

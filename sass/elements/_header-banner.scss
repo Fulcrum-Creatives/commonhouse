@@ -8,6 +8,11 @@
   overflow: hidden;
   top: 4px;
   padding-top:  3em;
+  a {
+    color: #fff;
+    text-decoration: none;
+    @extend .link__hover--shadow-small;
+  }
   p {
     margin-bottom: 23px;
   }
