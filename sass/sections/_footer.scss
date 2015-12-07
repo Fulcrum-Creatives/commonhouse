@@ -50,3 +50,11 @@
     left: -70px;
   }
 }
+.footer__text {
+  margin-bottom: 0px;
+}
+.footer__subtext {
+  text-align: center;
+  text-transform: lowercase;
+  @include font-size(18);
+}

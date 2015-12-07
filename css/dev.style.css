@@ -1477,6 +1477,17 @@ img {
   left: -70px;
 }
 
+.footer__text {
+  margin-bottom: 0px;
+}
+
+.footer__subtext {
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-size: 1.125em;
+}
+
 /*---------------------------------------------------------
  * Hover States
 ---------------------------------------------------------*/
