@@ -35,25 +35,24 @@ if( !is_home() || !is_front_page() ) {
     <?php get_template_part( 'template-parts/menu', 'primary' ); ?>
     <div class="header__banner page-<?php echo $page_id; ?>">
       <div class="header__banner-text">
-        <?php if( isset( $ch_tag_line ) ) : ?>
+        <?php if( $ch_tag_line != '' ) : ?>
           <p class="banner-text__tagline tidesans__500 <?php echo $header_show; ?>">
             <?php echo $ch_tag_line; ?>
           </p>
-        <?php endif;  if( isset( $ch_header_text_line_one ) ) : ?>
+        <?php endif;  if( $ch_header_text_line_one != '' ) : ?>
           <p class="banner-text__line-one tidesans__700 <?php echo $header_show; ?>">
             <?php echo $ch_header_text_line_one; ?>
           </p>
-        <?php endif;  if( isset( $ch_header_text_line_two ) ) : ?>
           <p class="banner-text__line-two tidesans__700 <?php echo $header_show; ?>">
             <?php echo $ch_header_text_line_two; ?>
           </p>
-        <?php endif;  if( isset( $ch_sub_tag_line ) ) : ?>
+        <?php endif;  if( $ch_sub_tag_line != '' ) : ?>
           <p class="banner-text__sub-tagline tidesans__500 <?php echo $header_show; ?>">
             <?php echo $ch_sub_tag_line; ?>
           </p>
         <?php endif; ?>
       </div>
-      <?php if( isset( $ch_header_image ) ) : ?>
+      <?php if( $ch_header_image != '' ) : ?>
         <div class="header__banner-image"></div>
       <?php endif; ?>
     </div>

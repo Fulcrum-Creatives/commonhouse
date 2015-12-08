@@ -7,7 +7,10 @@
 .entry.listing,
 .entry.single {
   overflow: hidden;
-  padding: 2.5em 0;
+  padding: 0 0 2.5em 0;
+  @include media-query(768px) {
+    padding: 2.5em 0;
+  }
   .entry__thumbnail {
     padding: 0 0 2.5em 0;
     @include media-query(800px) {
@@ -22,7 +25,12 @@
       }
     }
     &.rect {
-      padding: 0 4em 0 0;
+      padding: 0 10px;
+      margin-bottom: 1em;
+      @include media-query(768px) {
+        padding: 0 4em 0 0;
+        margin-bottom: 0;
+      }
       img,
       a {
         border-radius: 20px;
@@ -42,7 +50,7 @@
   }
   .entry__heading {
     @include font-size(35);
-    margin: 0 0 0.25em;
+    margin: 0 0 30px;
     text-transform: uppercase;
     text-align: center;
     color: $light_green2;
@@ -57,12 +65,16 @@
   .entry_subtitle {
     color: $light_green2;
     @include font-size(28);
-    margin: 0 0 0.25em;
+    margin: 0 0 25px;
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
     @include media-query(800px) {
       text-align: left;
+    }
+    &.tidesans__300 {
+      @include font-size(23);
+      margin: 0 0 20px;
     }
   }
   p {

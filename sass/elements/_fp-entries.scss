@@ -2,7 +2,10 @@
  * Front Page Entries
 ---------------------------------------------------------*/
 .entry__fp {
-  margin-bottom: 3em;
+  margin-bottom: 0;
+  @include media-query(768px) {
+    margin-bottom: 3em;
+  }
   .entry__header,
   .event__date,
   .event__location {
@@ -36,5 +39,10 @@
   .entry__circle-lrg {
     margin: 1.5em auto;
     top: 30px;
+  }
+}
+.hp_events {
+  .content__wrapper {
+    padding: 0 1em; 
   }
 }

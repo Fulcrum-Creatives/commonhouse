@@ -5,8 +5,8 @@
 .header__logo h1,
 .header__logo picture {
   width: 219px;
-  height: 70px;
-  margin: 0 auto 1.5em;
+  height: 69px;
+  margin: 0 auto 4px;
   @include media-query(835px) {
     margin: 0;
   }

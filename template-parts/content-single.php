@@ -2,6 +2,7 @@
 $ch_ales_style            = dfw_get_field( 'ch_ales_style' );
 $ch_ales_srm_color        = dfw_get_field( 'ch_ales_srm_color' );
 $ch_ale_image             = dfw_get_field( 'ch_ale_image' );
+$ch_ales_subtitle         = dfw_get_field( 'ch_ales_subtitle' );
 $ch_people_nickname       = dfw_get_field( 'ch_people_nickname' );
 $ch_event_type            = dfw_get_field( 'ch_event_type' );
 $ch_event_date            = dfw_get_field( 'ch_event_date' );
@@ -62,6 +63,11 @@ endif;
         	endif;
           ?>
         </h3>
+        <?php if( is_singular( 'ales' ) ) : ?>
+          <h4 class="entry_subtitle tidesans__300">
+            <?php echo '<span style="color: ' . $ch_ales_srm_color . '">' . $ch_ales_subtitle . '</span>'; ?>
+          </h4>
+        <?php endif; ?>
         <?php the_content(); ?>
       </div>
     </section>

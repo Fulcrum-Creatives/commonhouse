@@ -7,22 +7,19 @@
   position: relative;
   overflow: hidden;
   top: 4px;
-  padding-top:  3em;
+  padding: 1em;
+  @include media-query(768px) {
+    padding: 3em 1em;
+  }
   a {
     color: #fff;
     text-decoration: none;
     @extend .link__hover--shadow-small;
   }
-  p {
-    margin-bottom: 23px;
-  }
   &.page-10 {
     .header__banner-image {
       opacity: 0.3;
     }
-  }
-  @include media-query(835px) {
-    padding-top: 0;
   }
 }
 .header__banner-image {
@@ -42,13 +39,11 @@
   padding: 1em 0;
   position: relative;
   z-index: 10;
-  @include media-query(768px) {
-    padding: 100px 0 86px;
-  }
 }
 .banner-text__tagline {
   @include font-size(28);
   letter-spacing: 2px;
+  margin-bottom: 60px;
 }
 .banner-text__tagline {
   display: none;
@@ -61,15 +56,18 @@
   @include font-size(60);
   letter-spacing: 6px;
   line-height: 1em;
+  margin-bottom: 15px;
   @include media-query(835px) {
     @include font-size(70);
   }
-}
-.banner-text__sub-tagline {
+}.banner-text__sub-tagline {
   color: $yellow;
   @include font-size(20);
+  margin-top: 40px;
+  margin-bottom: 0;
   @include media-query(768px) {
     @include font-size(29);
+    margin-bottom: 23px;
   }
 }
 .header__text-show {

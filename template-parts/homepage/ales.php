@@ -93,7 +93,7 @@ endwhile; endif; wp_reset_postdata();
       </div>
     </div>
     <div class="hp-section__mobile ales__mobile">
-      <div class="row entry__fp slick-slider">
+      <div class="row slick-slider entry__fp">
         <?php
         $ale_mobile_query = new WP_Query( array(
             'post_type'      => 'ales',

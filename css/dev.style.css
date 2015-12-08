@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.19
+Version: 1.0.20
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -306,28 +306,41 @@ body {
 }
 
 .col__2-3 {
-  width: 66.66%;
-}
-
-.col__1-3 {
-  width: 33.33%;
-}
-
-.col__1-2 {
-  width: 50%;
-}
-
-.entry.single .col__1-2,
-.entry.listing .col__1-2 {
   width: 100%;
   float: none;
 }
-@media screen and (min-width: 835px) {
-  .entry.single .col__1-2,
-  .entry.listing .col__1-2 {
+@media screen and (min-width: 768px) {
+  .col__2-3 {
+    width: 66.66%;
+    float: left;
+  }
+}
+
+.col__1-3 {
+  width: 100%;
+  float: none;
+}
+@media screen and (min-width: 768px) {
+  .col__1-3 {
+    width: 33.33%;
+    float: left;
+  }
+}
+
+.col__1-2 {
+  width: 100%;
+  float: none;
+}
+@media screen and (min-width: 768px) {
+  .col__1-2 {
     width: 50%;
     float: left;
   }
+}
+
+.slick-slider .col__1-3 {
+  width: 33.33%;
+  float: left;
 }
 
 .col__1-4 {
@@ -458,18 +471,17 @@ img {
   font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* @font-face {
-    font-family: 'tide_sans300_lil_kahuna';
-    src: url('fonts/tidesans/tidesans-300lilkahuna.eot');
-    src: url('fonts/tidesans/tidesans-300lilkahuna.eot?#iefix') format('embedded-opentype'),
-         url('fonts/tidesans/tidesans-300lilkahuna.woff2') format('woff2'),
-         url('fonts/tidesans/tidesans-300lilkahuna.woff') format('woff'),
-         url('fonts/tidesans/tidesans-300lilkahuna.ttf') format('truetype'),
-         url('fonts/tidesans/tidesans-300lilkahuna.svg#tide_sans300_lil_kahuna') format('svg');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'tide_sans300_lil_kahuna';
+  src: url("fonts/tidesans/tidesans-300lilkahuna.eot");
+  src: url("fonts/tidesans/tidesans-300lilkahuna.eot?#iefix") format("embedded-opentype"), url("fonts/tidesans/tidesans-300lilkahuna.woff2") format("woff2"), url("fonts/tidesans/tidesans-300lilkahuna.woff") format("woff"), url("fonts/tidesans/tidesans-300lilkahuna.ttf") format("truetype"), url("fonts/tidesans/tidesans-300lilkahuna.svg#tide_sans300_lil_kahuna") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.tidesans__300 {
+  font-family: 'tide_sans300_lil_kahuna', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 
-} */
 @font-face {
   font-family: 'tide_sans400_lil_dude';
   src: url("fonts/tidesans/tidesans-400lildude.eot");
@@ -563,8 +575,8 @@ img {
 .header__logo h1,
 .header__logo picture {
   width: 219px;
-  height: 70px;
-  margin: 0 auto 1.5em;
+  height: 69px;
+  margin: 0 auto 4px;
 }
 @media screen and (min-width: 835px) {
   .header__logo,
@@ -650,8 +662,13 @@ img {
 }
 
 .footer-nav {
-  margin-top: 3em;
+  margin-top: 1em;
   letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    margin-top: 3em;
+  }
 }
 
 .sm {
@@ -688,12 +705,7 @@ img {
   white-space: nowrap;
   text-decoration: none;
   color: #963923;
-  padding: 1em;
-}
-@media screen and (min-width: 835px) {
-  .sm a {
-    padding: 0.5em;
-  }
+  padding: 0.5em;
 }
 
 /*---------------------------------------------------------
@@ -705,23 +717,20 @@ img {
   position: relative;
   overflow: hidden;
   top: 4px;
-  padding-top: 3em;
+  padding: 1em;
+}
+@media screen and (min-width: 768px) {
+  .header__banner {
+    padding: 3em 1em;
+  }
 }
 .header__banner a {
   color: #fff;
   text-decoration: none;
 }
-.header__banner p {
-  margin-bottom: 23px;
-}
 .header__banner.page-10 .header__banner-image {
   opacity: 0.3;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-}
-@media screen and (min-width: 835px) {
-  .header__banner {
-    padding-top: 0;
-  }
 }
 
 .header__banner-image {
@@ -745,16 +754,12 @@ img {
   position: relative;
   z-index: 10;
 }
-@media screen and (min-width: 768px) {
-  .header__banner-text {
-    padding: 100px 0 86px;
-  }
-}
 
 .banner-text__tagline {
   font-size: 28px;
   font-size: 1.75em;
   letter-spacing: 2px;
+  margin-bottom: 60px;
 }
 
 .banner-text__tagline {
@@ -772,6 +777,7 @@ img {
   font-size: 3.75em;
   letter-spacing: 6px;
   line-height: 1em;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 835px) {
   .banner-text__line-one,
@@ -785,11 +791,14 @@ img {
   color: #fcbd41;
   font-size: 20px;
   font-size: 1.25em;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .banner-text__sub-tagline {
     font-size: 29px;
     font-size: 1.8125em;
+    margin-bottom: 23px;
   }
 }
 
@@ -894,7 +903,12 @@ img {
  * Front Page Entries
 ---------------------------------------------------------*/
 .entry__fp {
-  margin-bottom: 3em;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .entry__fp {
+    margin-bottom: 3em;
+  }
 }
 .entry__fp .entry__header,
 .entry__fp .event__date,
@@ -933,6 +947,10 @@ img {
 .ales__mobile .entry__circle-lrg {
   margin: 1.5em auto;
   top: 30px;
+}
+
+.hp_events .content__wrapper {
+  padding: 0 1em;
 }
 
 /*---------------------------------------------------------
@@ -988,6 +1006,14 @@ img {
   background-image: url(images/slider-next-white.png);
 }
 
+.ales__mobile .slick-arrow {
+  top: -45px;
+}
+
+.people__mobile .slick-arrow {
+  top: -48px;
+}
+
 /*---------------------------------------------------------
  * Entries
 ---------------------------------------------------------*/
@@ -995,7 +1021,13 @@ img {
 .single main {
   background-color: #fff;
   overflow: hidden;
-  padding: 5em 0;
+  padding: 1em 0;
+}
+@media screen and (min-width: 768px) {
+  .page main,
+  .single main {
+    padding: 5em 0;
+  }
 }
 
 .home.page main,
@@ -1013,7 +1045,7 @@ img {
   font-family: 'tide_sans600_bunny', Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 35px;
   font-size: 2.1875em;
-  margin: 0 0 0.25em;
+  margin: 0 0 26px;
   text-transform: uppercase;
   color: #fec931;
 }
@@ -1022,9 +1054,21 @@ img {
   color: #fec931;
   font-size: 28px;
   font-size: 1.75em;
-  margin: 0 0 0.25em;
+  margin: 0 0 18px;
   font-weight: normal;
   text-transform: uppercase;
+}
+.entry__content h4 {
+  font-family: 'tide_sans300_lil_kahuna', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fec931;
+  font-size: 23px;
+  font-size: 1.4375em;
+  margin: 0 0 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.entry__content p {
+  margin-bottom: 0.5em;
 }
 .entry__content p a {
   color: #1a1107;
@@ -1059,8 +1103,13 @@ img {
 }
 
 .entry__image {
-  padding-right: 1em;
+  padding-right: 0;
   margin-bottom: 2.5em;
+}
+@media screen and (min-width: 768px) {
+  .entry__image {
+    padding-right: 1em;
+  }
 }
 .entry__image img {
   display: block;
@@ -1108,6 +1157,7 @@ img {
 .entry__rect a,
 .entry__rect img {
   width: 376px;
+  max-width: 100%;
   height: 158px;
   border-radius: 20px;
 }
@@ -1122,7 +1172,13 @@ img {
 .entry.listing,
 .entry.single {
   overflow: hidden;
-  padding: 2.5em 0;
+  padding: 0 0 2.5em 0;
+}
+@media screen and (min-width: 768px) {
+  .entry.listing,
+  .entry.single {
+    padding: 2.5em 0;
+  }
 }
 .entry.listing .entry__thumbnail,
 .entry.single .entry__thumbnail {
@@ -1148,7 +1204,15 @@ img {
 }
 .entry.listing .entry__thumbnail.rect,
 .entry.single .entry__thumbnail.rect {
-  padding: 0 4em 0 0;
+  padding: 0 10px;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .entry.listing .entry__thumbnail.rect,
+  .entry.single .entry__thumbnail.rect {
+    padding: 0 4em 0 0;
+    margin-bottom: 0;
+  }
 }
 .entry.listing .entry__thumbnail.rect img,
 .entry.listing .entry__thumbnail.rect a,
@@ -1176,7 +1240,7 @@ img {
 .entry.single .entry__heading {
   font-size: 35px;
   font-size: 2.1875em;
-  margin: 0 0 0.25em;
+  margin: 0 0 30px;
   text-transform: uppercase;
   text-align: center;
   color: #fec931;
@@ -1197,7 +1261,7 @@ img {
   color: #fec931;
   font-size: 28px;
   font-size: 1.75em;
-  margin: 0 0 0.25em;
+  margin: 0 0 25px;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
@@ -1207,6 +1271,12 @@ img {
   .entry.single .entry_subtitle {
     text-align: left;
   }
+}
+.entry.listing .entry_subtitle.tidesans__300,
+.entry.single .entry_subtitle.tidesans__300 {
+  font-size: 23px;
+  font-size: 1.4375em;
+  margin: 0 0 20px;
 }
 .entry.listing p,
 .entry.single p {
@@ -1408,10 +1478,10 @@ img {
  * Header
 ---------------------------------------------------------*/
 .header {
-  padding: 2em 0;
+  padding: 1em 0 0;
   overflow: hidden;
 }
-@media screen and (min-width: 790px) {
+@media screen and (min-width: 835px) {
   .header {
     padding: 2em 0 0;
   }
@@ -1435,14 +1505,25 @@ img {
   font-size: 1.5em;
   text-align: center;
   letter-spacing: 2px;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
+}
+@media screen and (min-width: 480px) {
+  .footer .tidesans__600 {
+    margin-top: 1.5em;
+  }
 }
 .footer .copyright {
   color: #fec931;
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
-  font-size: 1.25em;
+  font-size: 18px;
+  font-size: 1.125em;
+}
+@media screen and (min-width: 480px) {
+  .footer .copyright {
+    font-size: 20px;
+    font-size: 1.25em;
+  }
 }
 
 .footer__contact {
@@ -1478,12 +1559,13 @@ img {
 }
 
 .footer__text {
-  margin-bottom: 0px;
+  margin-bottom: 24px;
 }
 
 .footer__subtext {
   text-align: center;
   text-transform: lowercase;
+  margin-bottom: 18px;
   font-size: 18px;
   font-size: 1.125em;
 }

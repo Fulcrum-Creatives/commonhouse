@@ -39,23 +39,33 @@
   width: 100%;
 }
 .col__2-3 {
-  width: 66.66%;
+  width: 100%;
+  float: none;
+  @include media-query(768px) {
+    width: 66.66%;
+    float: left;
+  }
 }
 .col__1-3 {
-  width: 33.33%;
+  width: 100%;
+  float: none;
+  @include media-query(768px) {
+    width: 33.33%;
+    float: left;
+  }
 }
 .col__1-2 {
-  width: 50%;
+   width: 100%;
+   float: none;
+  @include media-query(768px) {
+    width: 50%;
+    float: left;
+  }
 }
-.entry.single,
-.entry.listing {
-  .col__1-2 {
-    width: 100%;
-    float: none;
-    @include media-query(835px) {
-      width: 50%;
-      float: left;
-    }
+.slick-slider {
+  .col__1-3 {
+    width: 33.33%;
+    float: left;
   }
 }
 .col__1-4 {

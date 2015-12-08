@@ -31,7 +31,7 @@
   font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* @font-face {
+@font-face {
     font-family: 'tide_sans300_lil_kahuna';
     src: url('fonts/tidesans/tidesans-300lilkahuna.eot');
     src: url('fonts/tidesans/tidesans-300lilkahuna.eot?#iefix') format('embedded-opentype'),
@@ -42,7 +42,10 @@
     font-weight: normal;
     font-style: normal;
 
-} */
+}
+.tidesans__300 {
+  font-family: 'tide_sans300_lil_kahuna', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 
 @font-face {
     font-family: 'tide_sans400_lil_dude';
