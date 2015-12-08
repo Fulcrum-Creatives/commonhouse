@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.1.0
+Version: 1.1.1
 Tags: 
 Text Domain: fcwp
 License: GNU General Public License v2 or later
@@ -1309,9 +1309,9 @@ img {
 }
 .contact-form .gfield_label {
   font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #8cae3d;
-  font-size: 29px;
-  font-size: 1.8125em;
+  color: #fff;
+  font-size: 25px;
+  font-size: 1.5625em;
   letter-spacing: 2px;
   padding-bottom: 1em;
 }
@@ -1325,7 +1325,7 @@ img {
   font-size: 18px;
   font-size: 1.125em;
   padding: 0.7em 1em;
-  border: 2px solid #963923;
+  border: 2px solid #fcbd41;
   background-color: #fbf2f0;
   -webkit-transition: border-color 0.5s ease, background-color 0.5s ease;
           transition: border-color 0.5s ease, background-color 0.5s ease;
@@ -1334,7 +1334,7 @@ img {
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
   outline: 0;
-  border-color: #fec931;
+  border-color: #724c21;
   background-color: #fff;
   -webkit-transition: border-color 0.5s ease, background-color 0.5s ease;
           transition: border-color 0.5s ease, background-color 0.5s ease;
@@ -1347,7 +1347,7 @@ img {
   font-size: 29px;
   font-size: 1.8125em;
   color: #842b1c;
-  background-color: #c79967;
+  background-color: #fcbd41;
   outline: 0;
   border: none;
   font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;

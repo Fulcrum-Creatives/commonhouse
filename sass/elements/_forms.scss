@@ -14,8 +14,8 @@
   }
   .gfield_label {
     font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: $light_green3;
-    @include font-size(29);
+    color: #fff;
+    @include font-size(25);
     letter-spacing: 2px;
     padding-bottom: 1em;
   }
@@ -28,12 +28,12 @@
     width: 100%;
     @include font-size(18);
     padding: 0.7em 1em;
-    border: 2px solid $dark_red;
+    border: 2px solid $yellow;
     background-color: lighten( $dark_red, 60% );
     transition: border-color 0.5s ease, background-color 0.5s ease;
     &:focus {
       outline: 0;
-      border-color: $light_green2;
+      border-color: $brown;
       background-color: #fff;
       transition: border-color 0.5s ease, background-color 0.5s ease;
     }
@@ -45,7 +45,7 @@
     padding: 0.5em 1em;
     @include font-size(29);
     color: #842b1c;
-    background-color: $light_brown;
+    background-color: $yellow;
     outline: 0;
     border: none;
     font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
