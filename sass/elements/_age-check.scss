@@ -8,11 +8,11 @@
   background-color: #5b7132 !important;
   background-image: url(images/bg-texture-lines.png) !important;
   height: auto !important;
-  width: 320px !important;
+  width: 304px !important;
   font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #fff;
   text-align: center;
-  padding: 1em !important;
+  padding: 1em 0.05em !important;
   box-shadow: $box_shadow;
   h1 {
     @include font-size(20);
