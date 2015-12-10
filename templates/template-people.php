@@ -14,14 +14,17 @@ get_header();
   if (have_posts()) : 
     while ($query->have_posts()) : 
       $query->the_post();
-      $ch_people_nickname = dfw_get_field( 'ch_people_nickname' );
+      $ch_people_nickname    = dfw_get_field( 'ch_people_nickname' );
+      $ch_people_image       = dfw_get_field( 'ch_people_image' );
+      $ch_people_image_hover = dfw_get_field( 'ch_people_image_hover' );
       ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class('entry listing people-page'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
         <div class="col__1-3">
           <?php if ( has_post_thumbnail() ) : ?>
-            <div class="entry__thumbnail entry__circle-lrg box__hover--shadow">
-              <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
-                <?php the_post_thumbnail();?>
+            <div class="entry__thumbnail entry__circle-sm box__hover--shadow">
+              <a href="<?php esc_url( the_permalink() ); ?>" class="entry__thumbnail--hover" rel="bookmark">
+                <img src="<?php echo $ch_people_image_hover['url']; ?>" class="hover__bottom" alt="<?php echo $ch_people_image_hover['alt']; ?>" />
+                <img src="<?php echo $ch_people_image['url']; ?>" class="hover__top" alt="<?php echo $ch_people_image['alt']; ?>" />
               </a>
             </div>
           <?php endif ?>
