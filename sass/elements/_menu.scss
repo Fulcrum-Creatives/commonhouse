@@ -6,10 +6,10 @@
   right: 0px;
   top: 18px;
   @extend .lulocleanone__bold;
-  @include font-size(14);
+  @include font-size(13);
   background-color: $light_green2;
   box-shadow: 0 10px 0 0 rgba(0,0,0,0.1);
-  padding: 1em;
+  padding: 1em 0;
   margin-bottom: 14px;
   z-index: 100;
   @include media-query(835px) {
@@ -59,7 +59,7 @@
     white-space: nowrap;
     text-decoration: none;
     color: $dark_red;
-     padding: 0.5em;
+     padding: 1em 0.25em;
     @extend .link__hover--shadow-small;
   }
 }

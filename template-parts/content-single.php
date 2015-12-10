@@ -17,29 +17,8 @@ endif;
 ?>
 <div class="content__wrapper inner">
   <article id="post-<?php the_ID(); ?>" <?php post_class('entry single'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
-      <div class="entry__image col__1-2">
-      	<?php if( is_singular( 'events' ) ) : ?>
-      		<?php if ( has_post_thumbnail() ) : ?>
-	      		<div class="entry__thumbnail rect">
-	             <?php the_post_thumbnail();?>
-             </div>
-        	<?php endif; ?>
-       
-      	<?php elseif( is_singular( 'people' ) ) : ?>
-          <?php if ( has_post_thumbnail() ) : ?>
-	      		<div class="entry__thumbnail">
-	             <?php the_post_thumbnail();?>
-	          </div>
-        	<?php endif; ?>
-
-        <?php elseif( is_singular( 'ales' ) ) : ?>
-        	<?php if ( has_post_thumbnail() ) : ?>
-		          <?php the_post_thumbnail();?>
-		      <?php endif; ?>
-	      <?php endif; ?>
-      </div>
+      
       <div class="entry__content col__1-2">
-
       	<?php if( is_singular( 'events' ) || is_singular( 'people' ) ) : ?>
       		<?php dfw_entry_title( array( 'heading_tag' => 'h2', 'heading_class' => 'entry__heading tidesans__600 ', 'has_link' => false ) ); ?>
         <?php elseif( is_singular( 'ales' ) ) : ?>
@@ -69,6 +48,28 @@ endif;
           </h4>
         <?php endif; ?>
         <?php the_content(); ?>
+      </div>
+
+      <div class="entry__image col__1-2">
+        <?php if( is_singular( 'events' ) ) : ?>
+          <?php if ( has_post_thumbnail() ) : ?>
+            <div class="entry__thumbnail rect">
+               <?php the_post_thumbnail();?>
+             </div>
+          <?php endif; ?>
+       
+        <?php elseif( is_singular( 'people' ) ) : ?>
+          <?php if ( has_post_thumbnail() ) : ?>
+            <div class="entry__thumbnail">
+               <?php the_post_thumbnail();?>
+            </div>
+          <?php endif; ?>
+
+        <?php elseif( is_singular( 'ales' ) ) : ?>
+          <?php if ( has_post_thumbnail() ) : ?>
+              <?php the_post_thumbnail();?>
+          <?php endif; ?>
+        <?php endif; ?>
       </div>
     </section>
   </article>

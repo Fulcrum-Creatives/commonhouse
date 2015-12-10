@@ -52,7 +52,6 @@
     @include font-size(35);
     margin: 0 0 30px;
     text-transform: uppercase;
-    text-align: center;
     color: $light_green2;
     @include media-query(800px) {
       text-align: left;
@@ -68,7 +67,6 @@
     margin: 0 0 25px;
     font-weight: normal;
     text-transform: uppercase;
-    text-align: center;
     @include media-query(800px) {
       text-align: left;
     }
