@@ -14,7 +14,14 @@ $header_show = '';
 if( !is_home() || !is_front_page() ) {
   $header_show = 'header__text-show';
 }
+if( is_404() ) :
 ?>
+<style>
+  .header__banner-image {
+    background-image: url(<?php echo bloginfo('template_url'); ?>/images/error-header-bg.png);
+  }
+</style>
+<?php else : ?>
 <style>
   .header__banner-image {
     background-image: url(<?php echo $ch_header_image['url']; ?>);
@@ -25,6 +32,7 @@ if( !is_home() || !is_front_page() ) {
     }
   }
 </style>
+<?php endif; ?>
 <?php if( !is_404() ) : ?>
   <header class="header bg_lines" role="banner" style="background-color:<?php echo $ch_header_color; ?>">
     <div class="content__wrapper">
@@ -77,6 +85,7 @@ if( !is_home() || !is_front_page() ) {
             <?php echo _e( 'A.K.A. FOR AU FAUX', 'fcwp' ); ?>
           </p>
         </div>
+        <div class="header__banner-image"></div>
       </div>
     </div>
   </header>
