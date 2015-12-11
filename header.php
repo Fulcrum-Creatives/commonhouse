@@ -20,6 +20,14 @@ if( is_404() ) :
   .header__banner-image {
     background-image: url(<?php echo bloginfo('template_url'); ?>/images/error-header-bg.png);
   }
+  .header__banner-text {
+    padding-bottom: 18em;
+  }
+  @media screen and (min-width: 768px) {
+    .header__banner-text {
+      padding-bottom: 1em;
+    }
+  }
 </style>
 <?php else : ?>
 <style>
