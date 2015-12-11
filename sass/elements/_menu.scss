@@ -59,7 +59,10 @@
     white-space: nowrap;
     text-decoration: none;
     color: $dark_red;
-     padding: 1em 0.25em;
+    padding: 1em 0.25em;
     @extend .link__hover--shadow-small;
+    @include media-query(835px) {
+      padding: 0.5em 1em;
+    }
   }
 }
