@@ -21,7 +21,7 @@ if( is_404() ) :
     background-image: url(<?php echo bloginfo('template_url'); ?>/images/error-header-bg.png);
   }
   .header__banner-text {
-    padding-bottom: 18em;
+    padding-bottom: 18em !important;
   }
   @media screen and (min-width: 768px) {
     .header__banner-text {
