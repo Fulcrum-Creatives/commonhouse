@@ -19,13 +19,14 @@ if( is_404() ) :
 <style>
   .header__banner-image {
     background-image: url(<?php echo bloginfo('template_url'); ?>/images/error-header-bg.png);
+    background-position: cover;
   }
-  .header__banner-text {
-    padding-bottom: 18em !important;
+  .error404 .header__banner-text {
+    padding-bottom: 1em;
   }
   @media screen and (min-width: 768px) {
-    .header__banner-text {
-      padding-bottom: 1em !important;
+    .error404 .header__banner-text {
+      padding-bottom: 18em;
     }
   }
 </style>
