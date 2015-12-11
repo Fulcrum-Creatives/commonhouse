@@ -25,7 +25,7 @@ if( is_404() ) :
   }
   @media screen and (min-width: 768px) {
     .header__banner-text {
-      padding-bottom: 1em;
+      padding-bottom: 1em !important;
     }
   }
 </style>
