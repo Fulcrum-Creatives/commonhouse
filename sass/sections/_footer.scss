@@ -65,3 +65,21 @@
   margin-bottom: 18px;
   @include font-size(18);
 }
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  width: 140px;
+  margin: 0 auto 0.5em;
+  @include font-size(30);
+  overflow: hidden;
+  li {
+    float: left;
+    margin-right: 1em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    color: $light_green2;
+  }
+}

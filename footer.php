@@ -2,6 +2,9 @@
   $ch_smokehouse_text    = dfw_get_field( 'ch_smokehouse_text', true );
   $ch_smokehouse_subtext = dfw_get_field( 'ch_smokehouse_subtext', true );
   $ch_smokehouse_link    = dfw_get_field( 'ch_smokehouse_link', true );
+  $ch_facebook_url       = dfw_get_field( 'ch_facebook_url', true );
+  $ch_twitter_url        = dfw_get_field( 'ch_twitter_url', true );
+  $ch_instagram_url      = dfw_get_field( 'ch_instagram_url', true );
 ?>
 </main>
 <footer class="footer" role="contentinfo">
@@ -21,6 +24,23 @@
       <a href="<?php echo $ch_smokehouse_link; ?>" rel="nofollow">
         <?php echo $ch_smokehouse_subtext; ?></p>
       </a>
+    <ul class="social-icons">
+      <li>
+        <a href="<?php echo $ch_facebook_url; ?>" class="link__hover--shadow" >
+          <i class="fa fa-facebook-square"></i>
+        </a>
+      </li>
+      <li>
+        <a href="<?php echo $ch_twitter_url; ?>" class="link__hover--shadow" >
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="<?php echo $ch_instagram_url; ?>" class="link__hover--shadow" >
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
     <p class="copyright tidesans__400">&copy; <?php _e( 'Commonhouse Ales', 'fcwp'); ?> <?php echo date('Y'); ?></p>
   </div>
 </footer>

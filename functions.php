@@ -138,6 +138,8 @@ if( !function_exists( 'fcwp_load_stylesheets' ) ) :
 		// Load the Internet Explorer 7 specific stylesheet.
 		wp_enqueue_style( 'fcwp-ie9-style', FCWP_URI . '/css/ie9.style.css', array( 'fcwp-style' ), '1.0.0' );
 		wp_style_add_data( 'fcwp-ie9-style', 'conditional', 'IE 9' );
+		// font awesome
+		wp_enqueue_style( 'font-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '1.0.0', 'all' );
 	}
 	add_action( 'wp_enqueue_scripts', 'fcwp_load_stylesheets' );
 endif;
