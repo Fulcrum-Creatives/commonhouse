@@ -9,14 +9,14 @@ endwhile; endif; wp_reset_postdata();
   <div class="content__wrapper">
     <header class="hp_sections__header header__full">
       <h2 class="lulocleanone__bold">
-        <a href="<?php echo $ch_people_section_page_link; ?> class="link__hover--shadow"">
+        <a href="<?php echo $ch_people_section_page_link; ?>"" class="link__hover--shadow"">
           <?php echo $ch_people_section_header_full; ?>
         </a>
       </h2>
     </header>
     <header class="hp_sections__header header__mobile">
       <h2 class="lulocleanone__bold">
-        <a href="<?php echo $ch_people_section_page_link; ?> class="link__hover--shadow"">
+        <a href="<?php echo $ch_people_section_page_link; ?>"" class="link__hover--shadow"">
           <?php echo $ch_people_section_header_mobile; ?>
         </a>
       </h2>
