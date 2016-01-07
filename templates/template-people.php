@@ -33,7 +33,7 @@ get_header();
           <?php dfw_entry_title( array( 'heading_tag' => 'h2', 'heading_class' => 'entry__heading tidesans__600 link__hover--shadow' ) ); ?>
           <?php if ( $ch_people_nickname ) : ?>
             <h3 class="entry_subtitle tidesans__400">
-              <?php echo _e( 'AKA', 'fcwp' ) . ' ' . $ch_people_nickname; ?>
+              <?php echo _e( 'A.K.A', 'fcwp' ) . ' ' . $ch_people_nickname; ?>
             </h3>
           <?php endif; ?>
           <?php dfw_custom_excerpt(); ?>
