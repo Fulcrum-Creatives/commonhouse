@@ -36,7 +36,7 @@ endif;
           if( is_singular( 'ales' ) ) :
           	echo '<span style="color: ' . $ch_ales_srm_color . '">' . $ch_ales_style . '</span>'; 
         	elseif( is_singular( 'people' ) ) :
-        		echo _e( 'AKA', 'fcwp' ) . ' ' . $ch_people_nickname;
+        		echo _e( 'A.K.A', 'fcwp' ) . ' ' . $ch_people_nickname;
         	elseif( is_singular( 'events' ) ) :
         		echo $dates . ' at ' . $ch_events_location;
         	endif;
