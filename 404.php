@@ -2,7 +2,7 @@
 <div class="content__wrapper inner">
   <article id="post-<?php the_ID(); ?>" <?php post_class('entry single'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
       <div class="entry__image col__1-2">
-        
+        <img src="<?php echo FCWP_URI; ?>/images/404-pint.png" />
       </div>
       <div class="entry__content col__1-2">
       <p>
