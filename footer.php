@@ -18,7 +18,10 @@
   <div class="content__wrapper">
     <?php get_template_part( 'template-parts/menu', 'footer' ); ?>
     <p class="tidesans__600 link__hover--shadow footer__text">
-      <a href="<?php echo $ch_smokehouse_link; ?>" rel="nofollow"><?php echo $ch_smokehouse_text; ?></a>
+      <a href="<?php echo $ch_smokehouse_link; ?>" rel="nofollow">
+        <img src="<?php echo FCWP_URI; ?>/images/smokehouselogo.png" class="smokehouse__logo" alt="Smokehouse Brewing Co.">
+        <?php echo $ch_smokehouse_text; ?>
+      </a>
     </p>
     <p class="tidesans__400 link__hover--shadow footer__subtext">
       <a href="<?php echo $ch_smokehouse_link; ?>" rel="nofollow">
