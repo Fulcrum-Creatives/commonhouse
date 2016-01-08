@@ -50,7 +50,7 @@
   }
   .entry__heading {
     @include font-size(35);
-    margin: 0 0 30px;
+    margin: 0;
     text-transform: uppercase;
     color: $light_green2;
     @include media-query(800px) {
