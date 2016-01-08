@@ -58,11 +58,11 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__1-2">
               <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail entry__rect box__hover--shadow">
+                <!-- <div class="entry__thumbnail entry__rect box__hover--shadow">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
                     <?php the_post_thumbnail();?>
                   </a>
-                </div>
+                </div> -->
               <?php endif ?>
                 <h3 class="entry__header lulocleanone__bold">
                   <a href="<?php esc_url( the_permalink() ); ?>" class="link__hover--shadow" rel="bookmark">
@@ -112,11 +112,11 @@ endwhile; endif; wp_reset_postdata();
             ?>
             <div class="col__full">
               <?php if ( has_post_thumbnail() ) : ?>
-                <div class="entry__thumbnail entry__rect box__hover--shadow">
+                <!-- <div class="entry__thumbnail entry__rect box__hover--shadow">
                   <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
                     <?php the_post_thumbnail();?>
                   </a>
-                </div>
+                </div> -->
               <?php endif ?>
                 <h3 class="entry__header lulocleanone__bold">
                   <a href="<?php esc_url( the_permalink() ); ?>" class="link__hover--shadow" rel="bookmark">
