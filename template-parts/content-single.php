@@ -16,8 +16,23 @@ else :
 endif;
 ?>
 <div class="content__wrapper inner">
-  <article id="post-<?php the_ID(); ?>" <?php post_class('entry single'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
       
+    <?php if( is_singular( 'post' ) ) : ?>
+      <article id="post-<?php the_ID(); ?>" <?php post_class('entry listing news-page'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
+        <?php if ( has_post_thumbnail() ) : ?>
+          <div class="entry__thumbnail col__1-3">
+            <a href="<?php esc_url( the_permalink() ); ?>" rel="bookmark">
+              <?php the_post_thumbnail();?>
+            </a>
+          </div>
+        <?php endif ?>
+        <div class="entry__content col__2-3 news__entry">
+          <?php dfw_entry_title( array( 'heading_tag' => 'h2', 'heading_class' => 'entry__heading tidesans__600 link__hover--shadow' ) ); ?>
+          <?php dfw_custom_excerpt(); ?>
+        </div>
+      </article>
+    <?php else: ?>
+    <article id="post-<?php the_ID(); ?>" <?php post_class('entry single'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
       <div class="entry__content col__1-2">
       	<?php if( is_singular( 'events' ) || is_singular( 'people' ) ) : ?>
       		<?php dfw_entry_title( array( 'heading_tag' => 'h2', 'heading_class' => 'entry__heading tidesans__600 ', 'has_link' => false ) ); ?>
@@ -73,5 +88,6 @@ endif;
       </div>
     </section>
   </article>
+  <?php endif; ?>
 </div>
 <div class="ales__bg" style="background-color: <?php echo $ch_ales_background_color; ?>"></div>

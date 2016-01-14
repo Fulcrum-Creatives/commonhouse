@@ -212,15 +212,6 @@ function fcwp_register_custom_sidebars() {
 }
 add_action( 'widgets_init', 'fcwp_register_custom_sidebars' );
 /*---------------------------------------------------------
- * Add SVG Mime Type
----------------------------------------------------------*/
-if( function_exists( 'dfw_add_mime_types' ) ) {
-	dfw_add_mime_types( array( 'svg' => 'image/svg+xml') );
-}
-/*---------------------------------------------------------
- * Move Yoast SEO to bottom 
----------------------------------------------------------*/
-/*---------------------------------------------------------
  * Move SEO Metabox
 ---------------------------------------------------------*/
 add_filter( 'wpseo_metabox_prio', function() { return 'low'; });

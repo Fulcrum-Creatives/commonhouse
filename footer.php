@@ -11,7 +11,9 @@
   <?php if( !is_page( 'contact' ) ) : ?>
     <div class="footer__contact">
       <div class="contact__link lulocleanone__bold">
-        <a href="<?php echo home_url(); ?>/contact" class="link__hover--shadow-small"><?php _e('Contact Us', 'fcwp' ); ?></a>
+        <a href="<?php echo home_url(); ?>/contact" class="link__hover--shadow-small">
+          <?php _e('Contact Us', 'fcwp' ); ?>
+        </a>
       </div>
     </div>
   <?php endif; ?>
