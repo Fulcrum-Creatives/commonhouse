@@ -9,6 +9,9 @@ if ( have_posts() ) : while ( have_posts() ) :  the_post();
   $ch_header_image         = dfw_get_field( 'ch_header_image' );
   $ch_header_image_retina  = dfw_get_field( 'ch_header_image_retina' );
   $page_id                 = get_the_ID();
+  if( is_singular( 'post' ) ) :
+    $ch_tag_line = get_the_title();
+  endif;
 endwhile; endif; wp_reset_postdata();
 $header_show = '';
 if( !is_home() || !is_front_page() ) {

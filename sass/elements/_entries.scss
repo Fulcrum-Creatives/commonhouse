@@ -168,6 +168,10 @@
   &.single-post {
     .entry__content {
       float: left !important;
+      &.center {
+        float: none !important;
+        margin: 0 auto;
+      }
     }
   }
 }
