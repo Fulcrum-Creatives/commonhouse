@@ -26,13 +26,13 @@ endif;
             </a>
           </div>
           <div class="entry__content col__2-3 news__entry">
-            <?php dfw_custom_excerpt(); ?>
+            <?php the_content(); ?>
           </div>
         </article>
       <?php else: ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class('entry listing news-page'); ?> aria-labelledby="section-heading-<?php the_ID(); ?>" role="article">
           <div class="entry__content col__2-3 news__entry center">
-            <?php dfw_custom_excerpt(); ?>
+            <?php the_content(); ?>
           </div>
         </article>
       <?php endif; ?>
