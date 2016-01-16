@@ -24,7 +24,10 @@
 .page-template-template-contact {
   main {
     .content__wrapper {
-      padding: 5em 0;
+      padding: 0 1em;
+      @include media-query(768px) {
+        padding: 5em 1em;
+      }
     }
   }
 }
