@@ -176,7 +176,10 @@
   }
 }
 .news__aside {
-  padding-right: 4em;
+  padding-right: 0;
+  @include media-query(768px) {
+    padding: 4em;
+  }
 }
 .news__aside-heading {
   text-transform: uppercase;
@@ -204,7 +207,6 @@
 .button_one {
   width: 100%;
   background-color: $light_green2;
-  height: 50px;
   color: #842b1c;
   text-align: center;
   margin: 1em 0;
