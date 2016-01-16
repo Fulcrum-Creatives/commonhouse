@@ -31,18 +31,24 @@
 .entry__content {
   h2 {
     font-family: 'tide_sans600_bunny', Arial, "Helvetica Neue", Helvetica, sans-serif;
-    @include font-size(35);
+    @include font-size(30);
     margin: 0 0 26px;
     text-transform: uppercase;
     color: $light_green2;
+    @include media-query(768px) {
+      @include font-size(35);
+    }
   }
   h3 {
     font-family: 'tide_sans400_lil_dude', Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: $light_green2;
-    @include font-size(28);
+    @include font-size(23);
     margin: 0 0 18px;
     font-weight: normal;
     text-transform: uppercase;
+    @include media-query(768px) {
+      @include font-size(28);
+    }
   }
   h4 {
     font-family: 'tide_sans300_lil_kahuna', Arial, "Helvetica Neue", Helvetica, sans-serif;

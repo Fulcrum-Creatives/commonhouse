@@ -49,10 +49,13 @@
     }
   }
   .entry__heading {
-    @include font-size(35);
+    @include font-size(30);
     margin: 0;
     text-transform: uppercase;
     color: $light_green2;
+    @include media-query(768px) {
+      @include font-size(35);
+    }
     @include media-query(800px) {
       text-align: left;
     }
