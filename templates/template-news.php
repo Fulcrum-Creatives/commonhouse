@@ -19,7 +19,7 @@ wp_reset_postdata();
   <div class="col__1-3 news__aside">
     <div class="cust-border__top"></div>
       <div class="button_one lulocleanone__bold">
-        <a href="<?php echo home_url(); ?>/press" class="link__hover--shadow-small">
+        <a href="<?php echo home_url(); ?>/press-release" class="link__hover--shadow-small">
           <?php echo _e( 'Press Releases', 'fcwp' ); ?>
         </a>
       </div>
