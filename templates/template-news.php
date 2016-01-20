@@ -31,6 +31,11 @@ wp_reset_postdata();
           <?php echo _e( 'Photos', 'fcwp' ); ?>
         </a>
       </div>
+      <div class="button_one lulocleanone__bold">
+        <a href="<?php echo home_url(); ?>/press" class="link__hover--shadow-small">
+          <?php echo _e( 'Press Releases', 'fcwp' ); ?>
+        </a>
+      </div>
     <div class="cust-border__bottom"></div>
       <div class="button_one lulocleanone__bold">
         <a href="<?php echo $ch_lennys_blog_url; ?>" class="link__hover--shadow-small">
