@@ -23,7 +23,7 @@ get_header();
     <div class="cust-border__bottom"></div>
       <div class="button_one lulocleanone__bold">
         <a href="<?php echo home_url(); ?>/commonhouse-news" class="link__hover--shadow-small">
-          <?php echo _e( 'News Releases', 'fcwp' ); ?>
+          <?php echo _e( 'Media Coverage', 'fcwp' ); ?>
         </a>
       </div>
       <div class="button_one lulocleanone__bold">
