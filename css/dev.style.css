@@ -1544,58 +1544,95 @@ img {
 /*---------------------------------------------------------
  * Age Check
 ---------------------------------------------------------*/
-#av-overlay-wrap {
-  background: #724C21 !important;
-  background: rgba(114, 76, 33, 0.9) !important;
+.popmake-overlay {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-#av-overlay {
-  background-color: #5b7132 !important;
-  background-image: url(images/bg-texture-lines.png) !important;
-  height: auto !important;
-  width: 320px !important;
+.popmake-close {
+  display: none;
+}
+
+.popmake-content {
+  position: relative;
+  background-color: #97ba46;
+  padding: 1em 1em 3em;
+  color: #f1f2f2;
   font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #fff;
+}
+.popmake-content small {
+  font-size: 10px;
+  font-size: 0.625em;
+}
+.popmake-content h2 {
+  font-size: 28px;
+  font-size: 1.75em;
+  margin-bottom: 0;
+}
+.popmake-content .row {
+  overflow: hidden;
+  max-width: 535px;
+  margin: 0 auto 0.5em;
+  padding-left: 0;
+}
+@media screen and (min-width: 930px) {
+  .popmake-content .row {
+    padding-left: 20px;
+  }
+}
+.popmake-content .row .age-btn {
+  display: block;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-size: 1.75em;
+  float: none;
+  width: 100%;
+  height: 72px;
+  margin-bottom: 1em;
   text-align: center;
-  padding: 1em 0.05em !important;
-  box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  padding: 19px;
+  color: #333;
+  font-weight: bold;
+  font-family: tide_sans600_bunny,Arial,"Helvetica Neue",Helvetica,sans-serif;
+  -webkit-transform: skew(0deg);
+      -ms-transform: skew(0deg);
+          transform: skew(0deg);
 }
-#av-overlay h1 {
-  font-size: 20px;
-  font-size: 1.25em;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+@media screen and (min-width: 930px) {
+  .popmake-content .row .age-btn {
+    width: 220px;
+    float: left;
+    margin: 0;
+    -webkit-transform: skew(-24deg);
+        -ms-transform: skew(-24deg);
+            transform: skew(-24deg);
+  }
+  .popmake-content .row .age-btn .normal {
+    -webkit-transform: skew(24deg);
+        -ms-transform: skew(24deg);
+            transform: skew(24deg);
+  }
 }
-#av-overlay p {
-  margin-bottom: 1em !important;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+.popmake-content .row .age-btn__yes {
+  background-color: #feca2e;
+  margin-right: 0;
 }
-#av-overlay .submit input {
-  margin-top: 1em;
+@media screen and (min-width: 768px) {
+  .popmake-content .row .age-btn__yes {
+    margin-right: 1.5em;
+  }
 }
-#av-overlay #av_verify_y {
-  width: auto !important;
+.popmake-content .row .age-btn__no {
+  background-color: #f1f2f2;
 }
-#av-overlay #av_verify_m {
-  margin-bottom: 1em !important;
-}
-
-#av_verify_form input {
-  color: #842b1c;
-  background-color: #c79967;
-  outline: 0;
-  border: none;
-  font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
-  text-shadow: none;
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-}
-#av_verify_form input:hover {
-  -webkit-transition: text-shadow 0.5s ease-in-out;
-          transition: text-shadow 0.5s ease-in-out;
-  text-shadow: 3px 3px 0 rgba(123, 43, 28, 0.3);
-}
-#av_verify_form select {
-  color: #000;
+.popmake-content .age-btmbar {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #6f101e;
+  height: 2em;
+  width: 100%;
 }
 
 /*---------------------------------------------------------

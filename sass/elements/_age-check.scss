@@ -1,54 +1,76 @@
 /*---------------------------------------------------------
  * Age Check
 ---------------------------------------------------------*/
-#av-overlay-wrap {
-  background: rgba(114, 76, 33, 0.9) !important;
+.popmake-overlay {
+  background-color: rgba( 0, 0, 0, 0.9 );
 }
-#av-overlay {
-  background-color: #5b7132 !important;
-  background-image: url(images/bg-texture-lines.png) !important;
-  height: auto !important;
-  width: 320px !important;
+.popmake-close {
+  display: none;
+}
+.popmake-content {
+  position: relative;
+  background-color: #97ba46;
+  padding: 1em 1em 3em;
+  color: #f1f2f2;
   font-family: 'lulo_cleanone', Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #fff;
-  text-align: center;
-  padding: 1em 0.05em !important;
-  box-shadow: $box_shadow;
-  h1 {
-    @include font-size(20);
-    text-shadow: $text_shadow_sm;
+  small {
+    @include font-size(10);
   }
-  p {
-    margin-bottom: 1em !important;
-    text-shadow: $text_shadow_sm;
+  h2 {
+    @include font-size(28);
+    margin-bottom: 0;
   }
-  .submit {
-    input {
-      margin-top: 1em
+  .row {
+    overflow: hidden;
+    max-width: 535px;
+    margin: 0 auto 0.5em;
+    padding-left: 0;
+    @include media-query(930px) {
+      padding-left: 20px;
+    }
+    .age-btn {
+      display: block;
+      text-transform: uppercase;
+      @include font-size(28);
+      float: none;
+      width: 100%;
+      height: 72px;
+      margin-bottom: 1em;
+      text-align: center;
+      text-decoration: none;
+      padding: 19px;
+      color: #333;
+      font-weight: bold;
+      font-family: tide_sans600_bunny,Arial,"Helvetica Neue",Helvetica,sans-serif;
+      transform: skew(0deg);
+      @include media-query(930px) {
+        width: 220px;
+        float: left;
+        margin: 0;
+        transform: skew(-24deg);
+        .normal {
+          transform: skew(24deg);
+        }
+      }
+      
+    }
+    .age-btn__yes {
+      background-color: #feca2e;
+      margin-right: 0;
+      @include media-query(768px) {
+        margin-right: 1.5em;
+      }
+    }
+    .age-btn__no {
+      background-color: #f1f2f2;
     }
   }
-  #av_verify_y {
-    width: auto !important;
-  }
-  #av_verify_m {
-    margin-bottom: 1em !important;
-  }
-}
-#av_verify_form {
-  input {
-    color: #842b1c;
-    background-color: $light_brown;
-    outline: 0;
-    border: none;
-    font-family: 'lulo_cleanone_bold', Arial, "Helvetica Neue", Helvetica, sans-serif;
-    text-shadow: none;
-    transition: $text_shadow_trans;
-    &:hover {
-      transition: $text_shadow_trans;
-      text-shadow: 3px 3px 0 rgba(123,43,28,0.3);
-    }
-  }
-  select {
-    color: #000;
+  .age-btmbar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #6f101e;
+    height: 2em;
+    width: 100%;
   }
 }
